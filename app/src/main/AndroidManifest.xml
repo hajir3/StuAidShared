@@ -14,12 +14,6 @@
         android:theme="@style/Theme.StuAid"
         tools:targetApi="31">
         <activity
-            android:name=".thirdActivity"
-            android:exported="false" />
-        <activity
-            android:name=".secondActivity"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.StuAid.NoActionBarAndStatusBar">
