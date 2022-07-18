@@ -1,24 +1,13 @@
 package com.example.stuaid;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowCompat;
-import androidx.core.view.WindowInsetsCompat;
-import androidx.core.view.WindowInsetsControllerCompat;
-import androidx.window.core.Version;
-
-import android.content.Intent;
-import android.graphics.Insets;
-import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.WindowCompat;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -102,13 +91,13 @@ public class MainActivity extends AppCompatActivity {
 
         //Splash Screen
 
-        new Handler().postDelayed(new Runnable() {
+      /*  new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 Intent intent = new Intent (MainActivity.this, secondActivity.class);
                 startActivity(intent);
                 finish();
             }
-        },SPLASH_TIME_OUT);
+        },SPLASH_TIME_OUT);*/
     }
 }
