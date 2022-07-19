@@ -37,12 +37,14 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/ic_menu_add"
-        tools:layout_editor_absoluteX="231dp"
-        tools:layout_editor_absoluteY="228dp" />
+        android:id="@+id/imageButton6"
+        android:layout_width="81dp"
+        android:layout_height="76dp"
+        android:hapticFeedbackEnabled="false"
+        app:srcCompat="@drawable/plus"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="332dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
