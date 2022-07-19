@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C7C7C7"
+    android:background="#000000"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -79,11 +79,10 @@
             android:id="@+id/Logo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_centerHorizontal="true"
             android:fontFamily="@font/great_vibes"
             android:gravity="bottom|center"
             android:text="StuAid"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textSize="80sp" />
     </RelativeLayout>
 
@@ -102,10 +101,11 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="20dp"
-                android:fontFamily="@font/baloo"
+                android:fontFamily="@font/acme"
                 android:text="Made by M&amp;H"
                 android:textColor="#8B4C39"
-                android:textSize="24sp" />
+                android:textSize="20sp"
+                android:textStyle="normal" />
 
         </RelativeLayout>
 
