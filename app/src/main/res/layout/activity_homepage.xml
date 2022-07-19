@@ -1,19 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Homepage">
+    android:background="#C7C7C7"
+    android:orientation="vertical"
+    tools:context="Homepage">
 
 
-    <TextView
+    <RelativeLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/great_vibes"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="StuAid"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="96sp"
+            android:visibility="visible"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="181dp" />
+    </RelativeLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fontFamily="@font/great_vibes"
-        android:text="StuAid"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="96sp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="176dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/button_planer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/appBackground"
+            android:fontFamily="serif"
+            android:text="Planer"
+            android:textColor="#8B4C39"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="bottom"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/button_noten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@color/appBackground"
+            android:fontFamily="serif"
+            android:text="Noten"
+            android:textColor="#8B4C39"
+            android:textSize="18sp"
+            android:layout_gravity="bottom"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/button_todo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@color/appBackground"
+            android:fontFamily="serif"
+            android:text="To-Do"
+            android:textColor="#8B4C39"
+            android:textSize="18sp"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="bottom"
+            style="?android:attr/buttonBarButtonStyle" />
+
+    </LinearLayout>
+
+</LinearLayout>
