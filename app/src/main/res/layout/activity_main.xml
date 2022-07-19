@@ -18,7 +18,7 @@
             android:layout_width="30dp"
             android:layout_height="220dp"
             android:layout_centerHorizontal="true"
-            android:background="@drawable/darkdarkblue_line" />
+            android:background="@drawable/brown_line" />
 
         <View
             android:id="@+id/second"
@@ -26,7 +26,7 @@
             android:layout_height="110dp"
             android:layout_marginLeft="15dp"
             android:layout_toRightOf="@id/first"
-            android:background="@drawable/blue_line" />
+            android:background="@drawable/orange_line" />
 
         <View
             android:id="@+id/third"
@@ -42,7 +42,7 @@
             android:layout_height="80dp"
             android:layout_marginLeft="15dp"
             android:layout_toRightOf="@id/third"
-            android:background="@drawable/darkdarkblue_line" />
+            android:background="@drawable/brown_line" />
 
         <View
             android:id="@+id/fifth"
@@ -58,7 +58,7 @@
             android:layout_height="90dp"
             android:layout_marginRight="15dp"
             android:layout_toLeftOf="@id/fifth"
-            android:background="@drawable/darkdarkblue_line" />
+            android:background="@drawable/brown_line" />
 
         <View
             android:id="@+id/seventh"
@@ -66,7 +66,7 @@
             android:layout_height="140dp"
             android:layout_marginRight="15dp"
             android:layout_toLeftOf="@id/sixth"
-            android:background="@drawable/blue_line" />
+            android:background="@drawable/orange_line" />
 
 
     </RelativeLayout>
@@ -104,7 +104,7 @@
                 android:layout_marginBottom="20dp"
                 android:fontFamily="@font/baloo"
                 android:text="Made by M&amp;H"
-                android:textColor="#706D6D"
+                android:textColor="#8B4C39"
                 android:textSize="24sp" />
 
         </RelativeLayout>
