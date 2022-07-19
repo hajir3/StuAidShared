@@ -9,12 +9,14 @@
     tools:context="Homepage">
 
 
-    <RelativeLayout
-        android:layout_marginTop="100dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp">
 
         <TextView
+            android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/great_vibes"
@@ -22,59 +24,52 @@
             android:text="StuAid"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textSize="96sp"
-            android:visibility="visible"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="39dp"
-            tools:layout_editor_absoluteY="181dp" />
-    </RelativeLayout>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="bottom"
-        android:layout_marginBottom="20dp">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:layout_gravity="bottom">
+
+
+        <Button
+            android:id="@+id/button_noten"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@color/appBackground"
+            android:fontFamily="serif"
+            android:text="@string/noten"
+            android:textColor="#8B4C39"
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/button_planer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_toEndOf="@id/button_noten"
             android:background="@color/appBackground"
             android:fontFamily="serif"
-            android:text="Planer"
+            android:text="@string/planer"
             android:textColor="#8B4C39"
-            android:textSize="18sp"
-            android:layout_marginStart="10dp"
-            android:layout_gravity="bottom"
-            style="?android:attr/buttonBarButtonStyle" />
-
-        <Button
-            android:id="@+id/button_noten"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:background="@color/appBackground"
-            android:fontFamily="serif"
-            android:text="Noten"
-            android:textColor="#8B4C39"
-            android:textSize="18sp"
-            android:layout_gravity="bottom"
-            style="?android:attr/buttonBarButtonStyle" />
+            android:textSize="18sp" />
+        <!--style="?android:attr/buttonBarButtonStyle"-->
 
         <Button
             android:id="@+id/button_todo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
+            android:layout_toStartOf="@id/button_noten"
             android:background="@color/appBackground"
             android:fontFamily="serif"
-            android:text="To-Do"
+            android:text="@string/to_do"
             android:textColor="#8B4C39"
-            android:textSize="18sp"
-            android:layout_marginEnd="10dp"
-            android:layout_gravity="bottom"
-            style="?android:attr/buttonBarButtonStyle" />
-
-    </LinearLayout>
+            android:textSize="18sp" />
+        <!--style="?android:attr/buttonBarButtonStyle"-->
+    </RelativeLayout>
 
 </LinearLayout>
