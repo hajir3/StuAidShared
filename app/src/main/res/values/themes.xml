@@ -22,23 +22,11 @@
         <item name="android:windowTranslucentNavigation">true</item>
         <item name="android:fitsSystemWindows">true</item>
         <item name="colorPrimaryVariant">@color/appBackground</item>
-        <item name="android:navigationBarColor">
-            @android:color/transparent
-        </item>
-
-        <!-- Optional: set to transparent if your app is drawing behind the status bar. -->
-        <item name="android:statusBarColor">
-            @android:color/transparent
-        </item>
-
-        <!-- Optional: set the status bar light and content dark. -->
-        <item name="android:windowLightStatusBar" tools:targetApi="m">
-            true
-        </item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
 
     </style>
 
-    <style name="Theme.StuAid.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
-    <style name="Theme.StuAid.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
