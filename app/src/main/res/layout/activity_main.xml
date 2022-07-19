@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1f1f1d"
+    android:background="#FFFFFF"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -18,7 +18,7 @@
             android:layout_width="30dp"
             android:layout_height="220dp"
             android:layout_centerHorizontal="true"
-            android:background="@drawable/white_line" />
+            android:background="@drawable/black_line" />
 
         <View
             android:id="@+id/second"
@@ -42,7 +42,7 @@
             android:layout_height="80dp"
             android:layout_marginLeft="15dp"
             android:layout_toRightOf="@id/third"
-            android:background="@drawable/white_line" />
+            android:background="@drawable/black_line" />
 
         <View
             android:id="@+id/fifth"
@@ -58,7 +58,7 @@
             android:layout_height="90dp"
             android:layout_marginRight="15dp"
             android:layout_toLeftOf="@id/fifth"
-            android:background="@drawable/white_line" />
+            android:background="@drawable/black_line" />
 
         <View
             android:id="@+id/seventh"
@@ -83,7 +83,7 @@
             android:fontFamily="@font/great_vibes"
             android:gravity="bottom|center"
             android:text="StuAid"
-            android:textColor="#FFFFFF"
+            android:textColor="#000000"
             android:textSize="80sp" />
     </RelativeLayout>
 
