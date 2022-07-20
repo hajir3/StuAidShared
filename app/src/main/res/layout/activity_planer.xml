@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".Planer">
 
     <TextView
@@ -37,14 +38,55 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton6"
-        android:layout_width="81dp"
-        android:layout_height="76dp"
+        android:id="@+id/add_item"
+        android:layout_width="40dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="80dp"
         android:hapticFeedbackEnabled="false"
-        app:srcCompat="@drawable/plus"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="124dp"
-        tools:layout_editor_absoluteY="332dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/plus_neu"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="114dp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:background="#FF7C53"
+        app:layout_constraintBottom_toTopOf="@+id/home_button"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="428dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/add_item"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
