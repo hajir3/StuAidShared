@@ -24,7 +24,7 @@ public class Planer extends AppCompatActivity {
     @SuppressLint("WrongViewCast")
     private Button button = findViewById(add_item);
 
-
+/*
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,4 +61,9 @@ public class Planer extends AppCompatActivity {
 
     private void addItem(View view) {
     }
+
+
+     */
 }
+
+

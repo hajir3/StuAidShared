@@ -4,6 +4,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
     tools:context=".ToDo">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/acme"
+        android:text="To-Do"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/home_button"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/acme"
+        android:text="StuAid"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:context=".ToDo"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="100dp">
+            <EditText
+                android:id="@+id/text_edit"
+                android:layout_width="262dp"
+                android:layout_height="67dp"
+                android:hint="Enter the item"
+                android:layout_marginStart="20dp"
+                tools:ignore="HardcodedText"
+                android:autofillHints="Your To-Do"
+                android:inputType="text" />
+
+            <ImageView
+                android:id="@+id/add_text"
+                android:layout_width="108dp"
+                android:layout_height="67dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/plus_neu"
+                android:contentDescription="Add Button"
+                tools:ignore="HardcodedText" />
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="434dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
