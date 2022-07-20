@@ -59,14 +59,6 @@
         tools:layout_editor_absoluteX="101dp"
         tools:layout_editor_absoluteY="114dp" />
 
-    <View
-        android:id="@+id/divider"
-        android:layout_width="409dp"
-        android:layout_height="1dp"
-        android:layout_marginBottom="5dp"
-        android:background="#FF7C53"
-        app:layout_constraintBottom_toTopOf="@+id/home_button"
-        tools:layout_editor_absoluteX="1dp" />
 
     <LinearLayout
         android:layout_width="409dp"
