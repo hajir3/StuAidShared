@@ -27,7 +27,7 @@ public class Homepage extends AppCompatActivity {
         setContentView(R.layout.activity_homepage);
 
         Button planerButton = findViewById(R.id.planer_button);
-        planerButton.setOnClickListener(v -> openActivityPlaner()));
+        planerButton.setOnClickListener(v -> openActivityPlaner());
         Button notenButton = findViewById(R.id.noten_button);
         notenButton.setOnClickListener(v -> openActivityNoten());
         Button todoButton = findViewById(R.id.todo_button);

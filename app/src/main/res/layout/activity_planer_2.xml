@@ -20,15 +20,16 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/content_activity_planer2" />
+    <include layout="@layout/content_planer2" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
+        android:id="@+id/add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginBottom="16dp"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        app:rippleColor="#B14747"
+        app:srcCompat="@drawable/plus_neu" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
