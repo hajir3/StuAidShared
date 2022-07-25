@@ -15,7 +15,7 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.example.stuaid.databinding.ActivityPlaner2Binding;
 
-public class activity_planer_2 extends AppCompatActivity {
+public class Planer_2 extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityPlaner2Binding binding;
