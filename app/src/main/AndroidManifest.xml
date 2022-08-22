@@ -14,17 +14,23 @@
         android:theme="@style/Theme.StuAid"
         tools:targetApi="31">
         <activity
+            android:name=".Noten_Fach"
+            android:exported="false" />
+        <activity
+            android:name=".Noten_Semester"
+            android:exported="false" />
+        <activity
             android:name=".ToDo"
             android:exported="true"
-            android:theme="@style/Theme.StuAid.Pages"/>
+            android:theme="@style/Theme.StuAid.Pages" />
         <activity
             android:name=".Noten"
             android:exported="true"
-            android:theme="@style/Theme.StuAid.Pages"/>
+            android:theme="@style/Theme.StuAid.Pages" />
         <activity
             android:name=".Planer"
             android:exported="true"
-            android:theme="@style/Theme.StuAid.Pages"/>
+            android:theme="@style/Theme.StuAid.Pages" />
         <activity
             android:name=".Homepage"
             android:exported="true"
