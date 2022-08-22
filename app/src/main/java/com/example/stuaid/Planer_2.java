@@ -29,7 +29,7 @@ public class Planer_2 extends AppCompatActivity {
 
         setSupportActionBar(binding.toolbar);
 
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_planer2);
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_activity_planer2);
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
@@ -44,7 +44,7 @@ public class Planer_2 extends AppCompatActivity {
 
     @Override
     public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_planer2);
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_activity_planer2);
         return NavigationUI.navigateUp(navController, appBarConfiguration)
                 || super.onSupportNavigateUp();
     }
