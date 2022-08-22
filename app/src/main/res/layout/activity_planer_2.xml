@@ -30,6 +30,6 @@
         android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginBottom="16dp"
         app:rippleColor="#B14747"
-        app:srcCompat="@drawable/plus" />
+        app:srcCompat="@drawable/plus_neu" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
