@@ -14,7 +14,7 @@
         android:theme="@style/Theme.StuAid"
         tools:targetApi="31">
         <activity
-            android:name=".Planer_2"
+            android:name=".activity_planer_2"
             android:exported="true"
             android:label="@string/title_activity_planer2"
             android:theme="@style/Theme.StuAid.NoActionBar" />
