@@ -8,6 +8,7 @@
     android:orientation="vertical"
     tools:context=".Homepage">
 
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -94,7 +95,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="10dp"
         android:fontFamily="@font/acme"
         android:text="planer"
         android:textColor="#000000"
@@ -110,7 +111,7 @@
         style="?android:attr/buttonBarButtonStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="10dp"
         android:fontFamily="@font/acme"
         android:text="noten"
         android:textColor="#000000"
@@ -127,7 +128,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="10dp"
         android:fontFamily="@font/acme"
         android:text="to-do"
         android:textColor="#000000"
