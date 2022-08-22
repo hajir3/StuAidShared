@@ -2,10 +2,10 @@ package com.example.stuaid;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 
 public class Homepage extends AppCompatActivity {
 
@@ -33,6 +33,5 @@ public class Homepage extends AppCompatActivity {
         Button todoButton = findViewById(R.id.todo_button);
         todoButton.setOnClickListener(v -> openActivityToDo());
     }
-
 
 }
