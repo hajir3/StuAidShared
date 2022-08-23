@@ -1,18 +1,18 @@
 package com.example.stuaid;
 
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowCompat;
+import androidx.core.view.WindowInsetsControllerCompat;
 
 
 public class Homepage extends AppCompatActivity {
+
 
     public void openActivityPlaner() {
         Intent intent = new Intent(this,Planer.class);
@@ -30,6 +30,21 @@ public class Homepage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
+        getWindow().setFlags(
+                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+        WindowInsetsControllerCompat windowInsetsController =
+                ViewCompat.getWindowInsetsController(getWindow().getDecorView());
+        if (windowInsetsController == null) {
+            return;
+        }
+        windowInsetsController.setAppearanceLightNavigationBars(true);
+        windowInsetsController.setAppearanceLightStatusBars(true);
+
+
+
+
+
 
         Button planerButton = findViewById(R.id.planer_button);
         planerButton.setOnClickListener(v -> openActivityPlaner());
@@ -37,15 +52,5 @@ public class Homepage extends AppCompatActivity {
         notenButton.setOnClickListener(v -> openActivityNoten());
         Button todoButton = findViewById(R.id.todo_button);
         todoButton.setOnClickListener(v -> openActivityToDo());
-    }
-
-    @Override
-    public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-
-            getWindow().setFlags(
-                    WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
-        }
     }
 }

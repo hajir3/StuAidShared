@@ -13,35 +13,49 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StuAid"
         tools:targetApi="31">
+
+        <!-- Modifikation der activities.
+         android:name gibt den Namen an.
+         android:screenOrientation gibt Orientation des Bildschirms an.
+         android:theme weist der activity ein bereits erstelltes Theme zu. -->
+
         <activity
             android:name=".Noten_Fach"
-            android:exported="false" />
+            android:screenOrientation="locked"
+            android:exported="false"
+            android:theme="@style/Theme.StuAid.Pages"/>
         <activity
             android:name=".Noten_Semester"
-            android:exported="false" />
+            android:screenOrientation="locked"
+            android:exported="false"
+            android:theme="@style/Theme.StuAid.Pages"/>
         <activity
             android:name=".ToDo"
+            android:screenOrientation="locked"
             android:exported="true"
             android:theme="@style/Theme.StuAid.Pages" />
         <activity
             android:name=".Noten"
+            android:screenOrientation="locked"
             android:exported="true"
             android:theme="@style/Theme.StuAid.Pages" />
         <activity
             android:name=".Planer"
+            android:screenOrientation="locked"
             android:exported="true"
             android:theme="@style/Theme.StuAid.Pages" />
         <activity
             android:name=".Homepage"
+            android:screenOrientation="locked"
             android:exported="true"
             android:theme="@style/Theme.StuAid.Pages" />
         <activity
             android:name=".MainActivity"
+            android:screenOrientation="locked"
             android:exported="true"
             android:theme="@style/Theme.StuAid.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
