@@ -1,39 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#FFFFFF"
     tools:context=".Noten"
     android:orientation="vertical"
     android:padding="10dp">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
     <Button
-        android:id="@+id/add"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add"
-        android:layout_gravity="center_horizontal"/>
-
-    </LinearLayout>
-
-
-
-
-
-
-
-
-
-
-   <!--  <Button
         android:id="@+id/home_button"
         style="?android:attr/buttonBarButtonStyle"
         android:layout_width="wrap_content"
@@ -42,13 +20,13 @@
         android:fontFamily="@font/acme"
         android:text="StuAid"
         android:textColor="#000000"
-        android:textSize="19dp"
+        android:textSize="19sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        />
+        tools:ignore="HardcodedText" />
 
     <ImageButton
        android:id="@+id/add_item"
@@ -60,7 +38,7 @@
        app:layout_constraintBottom_toBottomOf="parent"
        app:layout_constraintStart_toStartOf="parent"
        app:srcCompat="@drawable/plus_neu"
-       tools:ignore="MissingConstraints" />
+       tools:ignore="ContentDescription,MissingConstraints" />
 
    <TextView
        android:id="@+id/noten"
@@ -74,7 +52,8 @@
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintHorizontal_bias="0.498"
        app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent" />
+       app:layout_constraintTop_toTopOf="parent"
+       tools:ignore="HardcodedText" />
 
    <TextView
        android:id="@+id/semester"
@@ -87,7 +66,8 @@
        android:textStyle="bold"
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent" />
+       app:layout_constraintTop_toTopOf="parent"
+       tools:ignore="HardcodedText" />
 
   <Button
       android:id="@+id/button_semester"
@@ -99,7 +79,8 @@
       app:layout_constraintEnd_toStartOf="@+id/durchschnitt_1"
       app:layout_constraintHorizontal_bias="0"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="HardcodedText" />
 
   <TextView
       android:id="@+id/durchschnitt_1"
@@ -110,8 +91,10 @@
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.5"
       app:layout_constraintStart_toEndOf="@+id/button_semester"
-      app:layout_constraintTop_toTopOf="parent" />
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="HardcodedText" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>
+
 

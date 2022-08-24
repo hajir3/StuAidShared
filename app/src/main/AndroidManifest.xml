@@ -17,17 +17,18 @@
         <!-- Modifikation der activities.
          android:name gibt den Namen an.
          android:screenOrientation gibt Orientation des Bildschirms an.
-         android:theme weist der activity ein bereits erstelltes Theme zu. -->
+         android:theme weist der activity ein bereits erstelltes Theme zu.
+         android:exported gibt an, ob ein anderes Programm als android-studio die APP öffnen kann-->
 
         <activity
             android:name=".Noten_Fach"
             android:screenOrientation="locked"
-            android:exported="false"
+            android:exported="true"
             android:theme="@style/Theme.StuAid.Pages"/>
         <activity
             android:name=".Noten_Semester"
             android:screenOrientation="locked"
-            android:exported="false"
+            android:exported="true"
             android:theme="@style/Theme.StuAid.Pages"/>
         <activity
             android:name=".ToDo"
