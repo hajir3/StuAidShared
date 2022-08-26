@@ -18,7 +18,7 @@
          android:name gibt den Namen an.
          android:screenOrientation gibt Orientation des Bildschirms an.
          android:theme weist der activity ein bereits erstelltes Theme zu.
-         android:exported gibt an, ob ein anderes Programm als android-studio die APP öffnen kann-->
+         android:exported gibt an, ob ein anderes Programm als android-studio die activity öffnen kann-->
 
         <activity
             android:name=".Noten_Fach"

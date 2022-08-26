@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@drawable/background1"
     android:orientation="vertical"
     tools:context=".Homepage">
 
@@ -13,62 +13,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:ignore="MissingConstraints">
-
-        <View
-            android:id="@+id/first"
-            android:layout_width="30dp"
-            android:layout_height="220dp"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/brown_line" />
-
-        <View
-            android:id="@+id/second"
-            android:layout_width="30dp"
-            android:layout_height="110dp"
-            android:layout_marginLeft="15dp"
-            android:layout_toRightOf="@id/first"
-            android:background="@drawable/orange_line" />
-
-        <View
-            android:id="@+id/third"
-            android:layout_width="30dp"
-            android:layout_height="190dp"
-            android:layout_marginLeft="15dp"
-            android:layout_toRightOf="@id/second"
-            android:background="@drawable/darkblue_line" />
-
-        <View
-            android:id="@+id/fourth"
-            android:layout_width="30dp"
-            android:layout_height="80dp"
-            android:layout_marginLeft="15dp"
-            android:layout_toRightOf="@id/third"
-            android:background="@drawable/brown_line" />
-
-        <View
-            android:id="@+id/fifth"
-            android:layout_width="30dp"
-            android:layout_height="160dp"
-            android:layout_marginRight="15dp"
-            android:layout_toLeftOf="@id/first"
-            android:background="@drawable/darkblue_line" />
-
-        <View
-            android:id="@+id/sixth"
-            android:layout_width="30dp"
-            android:layout_height="90dp"
-            android:layout_marginRight="15dp"
-            android:layout_toLeftOf="@id/fifth"
-            android:background="@drawable/brown_line" />
-
-        <View
-            android:id="@+id/seventh"
-            android:layout_width="30dp"
-            android:layout_height="140dp"
-            android:layout_marginRight="15dp"
-            android:layout_toLeftOf="@id/sixth"
-            android:background="@drawable/orange_line" />
-
 
     </RelativeLayout>
 
@@ -98,7 +42,7 @@
         android:layout_marginBottom="40dp"
         android:fontFamily="@font/acme"
         android:text="planer"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         android:textSize="19sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -114,7 +58,7 @@
         android:layout_marginBottom="40dp"
         android:fontFamily="@font/acme"
         android:text="noten"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         android:textSize="19sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -131,7 +75,7 @@
         android:layout_marginBottom="40dp"
         android:fontFamily="@font/acme"
         android:text="to-do"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         android:textSize="19sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
