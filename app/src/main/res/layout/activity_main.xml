@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,126 +9,111 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <View
+        android:id="@+id/first"
+        android:layout_width="30dp"
+        android:layout_height="220dp"
+        android:background="@drawable/balkenorange"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
+    <View
+        android:id="@+id/second"
+        android:layout_width="30dp"
+        android:layout_height="160dp"
+        android:background="@drawable/balkengelb"
+        app:layout_constraintEnd_toStartOf="@id/fourth"
+        app:layout_constraintStart_toEndOf="@+id/first"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <View
+        android:id="@+id/third"
+        android:layout_width="30dp"
+        android:layout_height="150dp"
+        android:background="@drawable/balkengrun"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fifth"
+        app:layout_constraintEnd_toStartOf="@+id/first" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    <View
+        android:id="@+id/fourth"
+        android:layout_width="30dp"
+        android:layout_height="180dp"
+        android:background="@drawable/balkengrun"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/second"
+        app:layout_constraintEnd_toStartOf="@id/sixth"/>
 
-        <View
-            android:id="@+id/first"
-            android:layout_width="30dp"
-            android:layout_height="220dp"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/balkenorange" />
+    <View
+        android:id="@+id/fifth"
+        android:layout_width="30dp"
+        android:layout_height="170dp"
+        android:background="@drawable/balkengelb"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/seventh"
+        app:layout_constraintEnd_toStartOf="@+id/third" />
 
-        <View
-            android:id="@+id/second"
-            android:layout_width="30dp"
-            android:layout_height="110dp"
-            android:layout_marginLeft="15dp"
-            android:layout_toRightOf="@id/first"
-            android:background="@drawable/balkengelb" />
+    <View
+        android:id="@+id/sixth"
+        android:layout_width="30dp"
+        android:layout_height="130dp"
+        android:background="@drawable/balkenorange"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fourth"
+        app:layout_constraintEnd_toStartOf="@id/eighth"/>
 
-        <View
-            android:id="@+id/third"
-            android:layout_width="30dp"
-            android:layout_height="190dp"
-            android:layout_marginLeft="15dp"
-            android:layout_toRightOf="@id/second"
-            android:background="@drawable/balkengrun" />
+    <View
+        android:id="@+id/seventh"
+        android:layout_width="30dp"
+        android:layout_height="140dp"
+        android:background="@drawable/balkenorange"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ninth"
+        app:layout_constraintEnd_toStartOf="@+id/fifth" />
 
-        <View
-            android:id="@+id/fourth"
-            android:layout_width="30dp"
-            android:layout_height="80dp"
-            android:layout_marginLeft="15dp"
-            android:layout_toRightOf="@id/third"
-            android:background="@drawable/balkenorange" />
+    <View
+        android:id="@+id/eighth"
+        android:layout_width="30dp"
+        android:layout_height="100dp"
+        android:background="@drawable/balkengelb"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-        <View
-            android:id="@+id/fifth"
-            android:layout_width="30dp"
-            android:layout_height="160dp"
-            android:layout_marginRight="15dp"
-            android:layout_toLeftOf="@id/first"
-            android:background="@drawable/balkengrun" />
+    <View
+        android:id="@+id/ninth"
+        android:layout_width="30dp"
+        android:layout_height="90dp"
+        android:background="@drawable/balkengrun"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <View
-            android:id="@+id/sixth"
-            android:layout_width="30dp"
-            android:layout_height="90dp"
-            android:layout_marginRight="15dp"
-            android:layout_toLeftOf="@id/fifth"
-            android:background="@drawable/balkenorange" />
+    <TextView
+        android:id="@+id/Logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/great_vibes"
+        android:text="@string/stuaid"
+        android:textColor="#E6C38C"
+        android:textSize="80sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
-        <View
-            android:id="@+id/seventh"
-            android:layout_width="30dp"
-            android:layout_height="140dp"
-            android:layout_marginRight="15dp"
-            android:layout_toLeftOf="@id/sixth"
-            android:background="@drawable/balkengrun" />
+    <TextView
+        android:id="@+id/Tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/acme"
+        android:text="@string/made_by_m_amp_h"
+        android:textColor="#E6C38C"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 
-        <View
-            android:id="@+id/eighth"
-            android:layout_width="30dp"
-            android:layout_height="110dp"
-            android:layout_marginRight="15dp"
-            android:layout_toLeftOf="@id/seventh"
-            android:background="@drawable/balkengelb" />
-
-        <View
-            android:id="@+id/ninth"
-            android:layout_width="30dp"
-            android:layout_height="140dp"
-            android:layout_marginLeft="15dp"
-            android:layout_toRightOf="@id/fourth"
-            android:background="@drawable/balkengelb" />
-
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="253dp">
-
-        <TextView
-            android:id="@+id/Logo"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fontFamily="@font/great_vibes"
-            android:gravity="bottom|center"
-            android:text="StuAid"
-            android:textColor="#E6C38C"
-            android:textSize="80sp" />
-    </RelativeLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom">
-
-            <TextView
-                android:id="@+id/Tag"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="40dp"
-                android:fontFamily="@font/acme"
-                android:text="Made by M&amp;H"
-                android:textColor="#E6C38C"
-                android:textSize="20sp"
-                android:textStyle="normal" />
-
-        </RelativeLayout>
-
-
-    </LinearLayout>
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
