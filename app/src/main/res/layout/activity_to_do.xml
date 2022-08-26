@@ -40,38 +40,33 @@
         tools:ignore="HardcodedText" />
 
 
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="374dp"
+        android:layout_height="377dp"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="129dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        tools:context=".ToDo"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="100dp">
-            <EditText
-                android:id="@+id/text_edit"
-                android:layout_width="262dp"
-                android:layout_height="67dp"
-                android:hint="Enter the item"
-                android:layout_marginStart="20dp"
-                tools:ignore="HardcodedText"
-                android:autofillHints="Your To-Do"
-                android:inputType="text" />
+        <ImageView
+            android:id="@+id/add_text"
+            android:layout_width="108dp"
+            android:layout_height="67dp"
+            android:contentDescription="Add Button"
+            android:src="@drawable/plus_neu"
+            tools:ignore="HardcodedText,MissingConstraints" />
 
-            <ImageView
-                android:id="@+id/add_text"
-                android:layout_width="108dp"
-                android:layout_height="67dp"
-                android:layout_marginEnd="10dp"
-                android:src="@drawable/plus_neu"
-                android:contentDescription="Add Button"
-                tools:ignore="HardcodedText" />
+        <EditText
+            android:id="@+id/text_edit"
+            android:layout_width="262dp"
+            android:layout_height="67dp"
+            android:autofillHints="Your To-Do"
+            android:hint="Enter the item"
+            android:inputType="text"
+            tools:ignore="HardcodedText,MissingConstraints" />
+    </ListView>
 
-        <ListView
-            android:id="@+id/listview"
-            android:layout_width="434dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp" />
 
-    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

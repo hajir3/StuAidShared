@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
                         | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
 
         //Hooks
-        View first,second,third,fourth,fifth,sixth,seventh;
+        View first,second,third,fourth,fifth,sixth,seventh,eight,ninth;
         TextView Tag,Logo;
 
         //Animations
@@ -49,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
         fifth = findViewById(R.id.fifth);
         sixth = findViewById(R.id.sixth);
         seventh = findViewById(R.id.seventh);
+        eight = findViewById(R.id.eighth);
+        ninth = findViewById(R.id.ninth);
 
         Logo = findViewById(R.id.Logo);
         Tag = findViewById(R.id.Tag);
@@ -62,6 +64,8 @@ public class MainActivity extends AppCompatActivity {
         fifth.setAnimation(topAnimation);
         sixth.setAnimation(topAnimation);
         seventh.setAnimation(topAnimation);
+        eight.setAnimation(topAnimation);
+        ninth.setAnimation(topAnimation);
 
         Logo.setAnimation(middleAnimation);
         Tag.setAnimation(bottomAnimation);

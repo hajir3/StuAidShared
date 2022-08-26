@@ -21,7 +21,7 @@
             android:layout_width="30dp"
             android:layout_height="220dp"
             android:layout_centerHorizontal="true"
-            android:background="@drawable/brown_line" />
+            android:background="@drawable/balkenorange" />
 
         <View
             android:id="@+id/second"
@@ -29,7 +29,7 @@
             android:layout_height="110dp"
             android:layout_marginLeft="15dp"
             android:layout_toRightOf="@id/first"
-            android:background="@drawable/orange_line" />
+            android:background="@drawable/balkengelb" />
 
         <View
             android:id="@+id/third"
@@ -37,7 +37,7 @@
             android:layout_height="190dp"
             android:layout_marginLeft="15dp"
             android:layout_toRightOf="@id/second"
-            android:background="@drawable/darkblue_line" />
+            android:background="@drawable/balkengrun" />
 
         <View
             android:id="@+id/fourth"
@@ -45,7 +45,7 @@
             android:layout_height="80dp"
             android:layout_marginLeft="15dp"
             android:layout_toRightOf="@id/third"
-            android:background="@drawable/brown_line" />
+            android:background="@drawable/balkenorange" />
 
         <View
             android:id="@+id/fifth"
@@ -53,7 +53,7 @@
             android:layout_height="160dp"
             android:layout_marginRight="15dp"
             android:layout_toLeftOf="@id/first"
-            android:background="@drawable/darkblue_line" />
+            android:background="@drawable/balkengrun" />
 
         <View
             android:id="@+id/sixth"
@@ -61,7 +61,7 @@
             android:layout_height="90dp"
             android:layout_marginRight="15dp"
             android:layout_toLeftOf="@id/fifth"
-            android:background="@drawable/brown_line" />
+            android:background="@drawable/balkenorange" />
 
         <View
             android:id="@+id/seventh"
@@ -69,7 +69,23 @@
             android:layout_height="140dp"
             android:layout_marginRight="15dp"
             android:layout_toLeftOf="@id/sixth"
-            android:background="@drawable/orange_line" />
+            android:background="@drawable/balkengrun" />
+
+        <View
+            android:id="@+id/eighth"
+            android:layout_width="30dp"
+            android:layout_height="110dp"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/seventh"
+            android:background="@drawable/balkengelb" />
+
+        <View
+            android:id="@+id/ninth"
+            android:layout_width="30dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/fourth"
+            android:background="@drawable/balkengelb" />
 
 
     </RelativeLayout>
@@ -85,7 +101,7 @@
             android:fontFamily="@font/great_vibes"
             android:gravity="bottom|center"
             android:text="StuAid"
-            android:textColor="#FFFFFF"
+            android:textColor="#E6C38C"
             android:textSize="80sp" />
     </RelativeLayout>
 
@@ -103,10 +119,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="40dp"
                 android:fontFamily="@font/acme"
                 android:text="Made by M&amp;H"
-                android:textColor="#8B4C39"
+                android:textColor="#E6C38C"
                 android:textSize="20sp"
                 android:textStyle="normal" />
 

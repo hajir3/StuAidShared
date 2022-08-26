@@ -4,17 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background1"
+    android:background="@drawable/backgroundmain4"
     android:orientation="vertical"
     tools:context=".Homepage">
-
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints">
-
-    </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -28,7 +20,7 @@
             android:fontFamily="@font/great_vibes"
             android:gravity="bottom|center"
             android:text="StuAid"
-            android:textColor="#000000"
+            android:textColor="#514440"
             android:textSize="80sp" />
     </RelativeLayout>
 
@@ -39,10 +31,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="60dp"
         android:fontFamily="@font/acme"
         android:text="planer"
-        android:textColor="#FFFFFF"
+        android:textColor="#514440"
         android:textSize="19sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -55,10 +47,10 @@
         style="?android:attr/buttonBarButtonStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="60dp"
         android:fontFamily="@font/acme"
         android:text="noten"
-        android:textColor="#FFFFFF"
+        android:textColor="#514440"
         android:textSize="19sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -72,10 +64,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="60dp"
         android:fontFamily="@font/acme"
         android:text="to-do"
-        android:textColor="#FFFFFF"
+        android:textColor="#514440"
         android:textSize="19sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

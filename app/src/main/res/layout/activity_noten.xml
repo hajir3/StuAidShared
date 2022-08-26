@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/background2"
+    android:background="@drawable/backgroundmain4"
     tools:context=".Noten"
     android:orientation="vertical"
     android:padding="10dp">
@@ -19,7 +19,7 @@
         android:layout_marginBottom="40dp"
         android:fontFamily="@font/acme"
         android:text="StuAid"
-        android:textColor="#000000"
+        android:textColor="#514440"
         android:textSize="19sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -47,7 +47,7 @@
        android:layout_marginTop="40dp"
        android:fontFamily="@font/acme"
        android:text="NOTEN"
-       android:textColor="#000000"
+       android:textColor="#514440"
        android:textSize="24sp"
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintHorizontal_bias="0.498"
@@ -55,27 +55,14 @@
        app:layout_constraintTop_toTopOf="parent"
        tools:ignore="HardcodedText" />
 
-   <TextView
-       android:id="@+id/semester"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_marginTop="80dp"
-       android:text="SEMESTER"
-       android:textColor="#000000"
-       android:textSize="20sp"
-       android:textStyle="bold"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent"
-       tools:ignore="HardcodedText" />
-
-    <Button
+    <TextView
         android:id="@+id/button_semester"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="120dp"
         android:text="Semester"
+        android:textColor="#514440"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText" />
@@ -84,12 +71,27 @@
         android:id="@+id/durchschnitt_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="40dp"
         android:layout_marginTop="120dp"
-        android:text="Durchschnitt"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="\u00D8"
+        android:textColor="#514440"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText" />
+        app:layout_constraintEnd_toStartOf="@id/kompensationspunkte"
+        android:layout_marginEnd="40dp"
+        tools:ignore="HardcodedText"
+        tools:layout_editor_absoluteX="169dp" />
+
+    <TextView
+        android:id="@+id/kompensationspunkte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="40dp"
+        android:text="+/-"
+        android:textColor="#514440"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="HardcodedText"
+        tools:layout_editor_absoluteX="169dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
