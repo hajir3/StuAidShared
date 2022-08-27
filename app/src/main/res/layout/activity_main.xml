@@ -15,17 +15,17 @@
         android:layout_height="220dp"
         android:background="@drawable/balkenorange"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toEndOf="@id/third"
+        app:layout_constraintEnd_toStartOf="@id/second" />
 
     <View
         android:id="@+id/second"
         android:layout_width="30dp"
         android:layout_height="160dp"
         android:background="@drawable/balkengelb"
-        app:layout_constraintEnd_toStartOf="@id/fourth"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@+id/first"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toStartOf="@id/fourth"/>
 
     <View
         android:id="@+id/third"
