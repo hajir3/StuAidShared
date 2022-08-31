@@ -90,11 +90,11 @@
 
     <TextView
         android:id="@+id/Logo"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:fontFamily="@font/megrim"
-        android:text="@string/stuaid"
+        android:text="stuaid"
         android:textColor="#E6C38C"
         android:textSize="80sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -107,7 +107,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/megrim"
-        android:text="@string/made_by_m_amp_h"
+        android:text="made by m&amp;h"
         android:textColor="#E6C38C"
         android:textSize="20sp"
         android:textStyle="normal"
