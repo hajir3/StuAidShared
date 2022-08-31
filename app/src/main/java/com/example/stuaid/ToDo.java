@@ -18,8 +18,8 @@ public class ToDo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_to_do;
 
-        Button homeButton = findViewById(R.id.home_button);
-        homeButton.setOnClickListener(v ->openActivityHomepage());
+        Button homeButton2 = findViewById(R.id.home_button2);
+        homeButton2.setOnClickListener(v ->openActivityHomepage());
 
     }
 }
