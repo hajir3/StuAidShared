@@ -49,6 +49,7 @@
         android:layout_marginTop="120dp"
         android:text="Semester"
         android:textColor="#514440"
+        android:textStyle="bold"
         android:fontFamily="@font/megrim"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
