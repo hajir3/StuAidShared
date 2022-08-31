@@ -13,7 +13,7 @@
         style="?android:attr/buttonBarButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="60dp"
         android:fontFamily="@font/megrim"
         android:text="StuAid"
         android:textColor="#514440"
