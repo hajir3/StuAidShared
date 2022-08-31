@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BuildAttributionWarningsFilter">
-    <option name="noGCSettingWarning" value="true" />
-  </component>
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
@@ -19,19 +16,21 @@
         <entry key="..\:/Users/Haro/AndroidStudioProjects/StuAid2/app/src/main/res/layout/fragment_second.xml" value="0.2056434373663959" />
         <entry key="..\:/Users/Haro/AndroidStudioProjects/StuAid2/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2056434373663959" />
         <entry key="..\:/Users/Haro/AndroidStudioProjects/StuAid2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.122" />
-        <entry key="..\:/Users/Haro/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_homepage.xml" value="0.25052083333333336" />
-        <entry key="..\:/Users/Haro/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_main.xml" value="0.25052083333333336" />
-        <entry key="..\:/Users/Haro/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_noten.xml" value="0.25052083333333336" />
-        <entry key="..\:/Users/Haro/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_noten_fach.xml" value="0.25052083333333336" />
-        <entry key="..\:/Users/Haro/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_noten_semester.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/Haro/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_homepage.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/Haro/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_noten.xml" value="0.3625" />
         <entry key="..\:/Users/Haro/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_planer.xml" value="0.18541666666666667" />
-        <entry key="..\:/Users/Haro/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_to_do.xml" value="0.25052083333333336" />
-        <entry key="..\:/Users/Haro/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/item.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/Haro/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_to_do.xml" value="0.3625" />
         <entry key="..\:/Users/grimm/StudioProjects/StuAidShared/app/src/main/res/layout/activity_homepage.xml" value="0.33" />
         <entry key="..\:/Users/grimm/StudioProjects/StuAidShared/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/grimm/StudioProjects/StuAidShared/app/src/main/res/layout/activity_noten.xml" value="0.35648148148148145" />
         <entry key="..\:/Users/grimm/StudioProjects/StuAidShared/app/src/main/res/layout/activity_planer.xml" value="1.0" />
-        <entry key="..\:/Users/grimm/StudioProjects/StuAidShared/app/src/main/res/layout/item.xml" value="0.35648148148148145" />
+        <entry key="..\:/Users/miche/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_homepage.xml" value="0.335" />
+        <entry key="..\:/Users/miche/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_main.xml" value="0.375" />
+        <entry key="..\:/Users/miche/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_noten.xml" value="0.25" />
+        <entry key="..\:/Users/miche/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_noten_fach.xml" value="0.2796875" />
+        <entry key="..\:/Users/miche/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_noten_semester.xml" value="0.75" />
+        <entry key="..\:/Users/miche/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_planer.xml" value="0.335" />
+        <entry key="..\:/Users/miche/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_to_do.xml" value="0.335" />
+        <entry key="..\:/Users/miche/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/item.xml" value="0.2796875" />
       </map>
     </option>
   </component>
