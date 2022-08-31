@@ -16,7 +16,7 @@ public class ToDo extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_planer);
+        setContentView(R.layout.activity_to_do;
 
         Button homeButton = findViewById(R.id.home_button);
         homeButton.setOnClickListener(v ->openActivityHomepage());
