@@ -15,7 +15,7 @@
         android:fontFamily="@font/megrim"
         android:gravity="center"
         android:text="StuAid"
-        android:textColor="#514440"
+        android:textColor="#3E3330"
         android:textSize="80sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
