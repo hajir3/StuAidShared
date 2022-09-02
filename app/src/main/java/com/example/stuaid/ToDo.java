@@ -1,19 +1,30 @@
 package com.example.stuaid;
 
+import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
+import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowCompat;
 import androidx.core.view.WindowInsetsControllerCompat;
 
-public class ToDo extends AppCompatActivity {
 
 
-
+    public class ToDo extends ListActivity {
+        String[] eintrag = {
+                "Eintrag 1",
+                "Eintrag 2",
+                "Eintrag 3",
+                "Eintrag 4",
+                "Eintrag 5",
+                "Eintrag 6",
+        };
 
     public void openActivityHomepage() {
         Intent intent = new Intent(this,Homepage.class);
@@ -39,8 +50,18 @@ public class ToDo extends AppCompatActivity {
         homeButton2.setOnClickListener(v ->openActivityHomepage());
 
 
-
+        setListAdapter(new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1,eintrag));
     }
+        public void onListItemClick(ListView parent, View v,
+                                    int position, long id) {
+            Toast.makeText(this, "Ihre Auswahl : " + eintrag[position],
+                    Toast.LENGTH_LONG).show();
+        }
+
+
+
+
 }
 
 
