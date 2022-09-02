@@ -94,7 +94,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:fontFamily="@font/megrim"
-        android:text="stuaid"
+        android:text="StuAid"
         android:textColor="#E6C38C"
         android:textSize="80sp"
         app:layout_constraintBottom_toBottomOf="parent"
