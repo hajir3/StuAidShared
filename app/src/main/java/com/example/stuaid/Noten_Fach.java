@@ -20,8 +20,8 @@ public class Noten_Fach extends AppCompatActivity {
         Button homeButton = findViewById(R.id.home_button);
         homeButton.setOnClickListener(v ->openActivityHomepage());
 
-// hier
-        import androidx.appcompat.app.AppCompatActivity;
+
+        /* import androidx.appcompat.app.AppCompatActivity;
         import android.os.Bundle;
         import android.widget.Toast;
 
@@ -46,7 +46,7 @@ public class Noten_Fach extends AppCompatActivity {
                 });
             }
         }
-        // bis hier
+        */
 
     }
 

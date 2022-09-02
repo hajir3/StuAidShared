@@ -33,7 +33,7 @@
         <activity
             android:name=".ToDo"
             android:screenOrientation="locked"
-            android:exported="true"
+            android:exported="false"
             android:theme="@style/Theme.StuAid.Pages" />
         <activity
             android:name=".Noten"
