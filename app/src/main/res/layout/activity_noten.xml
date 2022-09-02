@@ -9,37 +9,23 @@
     tools:context=".Noten">
 
    <Button
-        android:id="@+id/home_button"
-        style="?android:attr/buttonBarButtonStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
-        android:fontFamily="@font/megrim"
-        android:text="StuAid"
-        android:textColor="#514440"
-        android:textSize="19sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="HardcodedText" />
+       android:id="@+id/home_button"
+       style="?android:attr/buttonBarButtonStyle"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="40dp"
+       android:fontFamily="@font/megrim"
+       android:text="StuAid"
+       android:textColor="#514440"
+       android:textSize="24sp"
+       android:textStyle="bold"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.498"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       tools:ignore="HardcodedText" />
 
-   <TextView
-        android:id="@+id/noten"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:fontFamily="@font/megrim"
-        android:text="Noten"
-        android:textColor="#3E3330"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText" />
+
 
    <TextView
         android:id="@+id/button_semester"
@@ -90,6 +76,55 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
+   <Button
+       android:id="@+id/planer_button"
+       style="?android:attr/buttonBarButtonStyle"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="20dp"
+       android:layout_marginBottom="60dp"
+       android:fontFamily="@font/megrim"
+       android:text="planer"
+       android:textColor="#514440"
+       android:textSize="19sp"
+       android:textStyle="bold"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toStartOf="@+id/noten_button"
+       app:layout_constraintStart_toStartOf="parent" />
+
+   <TextView
+       android:id="@+id/noten_button"
+       style="?android:attr/buttonBarButtonStyle"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="60dp"
+       android:fontFamily="@font/megrim"
+       android:text="noten"
+       android:backgroundTint="#000000"
+       android:textColor="#514440"
+       android:textSize="19sp"
+       android:textStyle="bold"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toStartOf="@+id/todo_button"
+       app:layout_constraintStart_toEndOf="@+id/planer_button" />
+
+   <Button
+       android:id="@+id/todo_button"
+       style="?android:attr/buttonBarButtonStyle"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginEnd="20dp"
+       android:layout_marginBottom="60dp"
+       android:fontFamily="@font/megrim"
+       android:text="to-do"
+       android:textColor="#514440"
+       android:textSize="19sp"
+       android:textStyle="bold"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toEndOf="@+id/noten_button" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
