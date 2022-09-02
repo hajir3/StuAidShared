@@ -17,7 +17,7 @@ public class Noten_Semester extends AppCompatActivity {
         startActivity(intent);
     }
     public void openActivityNoten_Fach(){
-        Intent intent = new Intent(this,Noten_Semester.class);
+        Intent intent = new Intent(this,Noten_Fach.class);
         startActivity(intent);}
 
     @Override
