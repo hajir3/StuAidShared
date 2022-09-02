@@ -41,7 +41,7 @@ public class Noten extends AppCompatActivity {
             homeButton.setOnClickListener(v -> openActivityHomepage());
 
             Button testButton = findViewById(R.id.test);
-            homeButton.setOnClickListener(v -> openActivityNoten_Semester());
+            testButton.setOnClickListener(v -> openActivityNoten_Semester());
         }
 
 
