@@ -12,7 +12,7 @@
     <View
         android:id="@+id/first"
         android:layout_width="30dp"
-        android:layout_height="220dp"
+        android:layout_height="235dp"
         android:background="@drawable/balkenorange"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/third"
@@ -21,7 +21,7 @@
     <View
         android:id="@+id/second"
         android:layout_width="30dp"
-        android:layout_height="160dp"
+        android:layout_height="170dp"
         android:background="@drawable/balkengelb"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@+id/first"
@@ -107,7 +107,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/megrim"
-        android:text="made by m&amp;h"
+        android:text="MADE BY M&amp;H"
         android:textColor="#E6C38C"
         android:textSize="20sp"
         android:textStyle="normal"

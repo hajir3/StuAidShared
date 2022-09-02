@@ -16,7 +16,7 @@
         android:layout_marginBottom="60dp"
         android:fontFamily="@font/megrim"
         android:text="StuAid"
-        android:textColor="#514440"
+        android:textColor="#3E3330"
         android:textSize="19sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
