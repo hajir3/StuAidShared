@@ -17,6 +17,14 @@ public class Planer extends AppCompatActivity {
         Intent intent = new Intent(this,Homepage.class);
         startActivity(intent);
     }
+    public void openActivityNoten() {
+        Intent intent = new Intent(this,Noten.class);
+        startActivity(intent);
+    }
+    public void openActivityToDo() {
+        Intent intent = new Intent(this,ToDo.class);
+        startActivity(intent);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +43,10 @@ public class Planer extends AppCompatActivity {
 
         Button homeButton3 = findViewById(R.id.home_button3);
         homeButton3.setOnClickListener(v ->openActivityHomepage());
+        Button notenButton = findViewById(R.id.noten_button);
+        notenButton.setOnClickListener(v -> openActivityNoten());
+        Button todoButton = findViewById(R.id.todo_button);
+        todoButton.setOnClickListener(v -> openActivityToDo());
     }
 }
 

@@ -19,7 +19,14 @@ public class Noten extends AppCompatActivity {
     public void openActivityNoten_Semester(){
         Intent intent = new Intent(this,Noten_Semester.class);
         startActivity(intent);}
-
+    public void openActivityPlaner() {
+        Intent intent = new Intent(this,Planer.class);
+        startActivity(intent);
+    }
+    public void openActivityToDo() {
+        Intent intent = new Intent(this,ToDo.class);
+        startActivity(intent);
+    }
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
@@ -36,6 +43,12 @@ public class Noten extends AppCompatActivity {
             windowInsetsController.setAppearanceLightStatusBars(true);
 
 
+
+            Button planerButton = findViewById(R.id.planer_button);
+            planerButton.setOnClickListener(v -> openActivityPlaner());
+
+            Button todoButton = findViewById(R.id.todo_button);
+            todoButton.setOnClickListener(v -> openActivityToDo());
 
             Button homeButton = findViewById(R.id.home_button);
             homeButton.setOnClickListener(v -> openActivityHomepage());
