@@ -32,7 +32,7 @@
         android:layout_marginTop="40dp"
         android:fontFamily="@font/megrim"
         android:text="Noten"
-        android:textColor="#514440"
+        android:textColor="#3E3330"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -80,6 +80,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="HardcodedText"
         tools:layout_editor_absoluteX="169dp" />
+
+    <Button
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

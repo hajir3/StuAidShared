@@ -12,12 +12,14 @@ import androidx.core.view.WindowInsetsControllerCompat;
 
 public class Noten extends AppCompatActivity {
 
-
-
-        public void openActivityHomepage() {
-            Intent intent = new Intent(this,Homepage.class);
-            startActivity(intent);
+    public void openActivityHomepage() {
+        Intent intent = new Intent(this,Homepage.class);
+        startActivity(intent);
         }
+    public void openActivityNoten_Semester(){
+        Intent intent = new Intent(this,Noten_Semester.class);
+        startActivity(intent);}
+
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
@@ -37,6 +39,11 @@ public class Noten extends AppCompatActivity {
 
             Button homeButton = findViewById(R.id.home_button);
             homeButton.setOnClickListener(v -> openActivityHomepage());
+
+            Button testButton = findViewById(R.id.test);
+            homeButton.setOnClickListener(v -> openActivityNoten_Semester());
         }
+
+
 }
 

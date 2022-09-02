@@ -57,7 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:text="Name Fach"
-        android:textColor="#514440"
+        android:textColor="#3E3330"
         android:fontFamily="@font/megrim"
         android:textSize="20sp"
         android:textStyle="bold"
