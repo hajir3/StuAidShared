@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.WindowCompat;
 
 
-public class MainActivity extends AppCompatActivity {
+public class SplashScreen extends AppCompatActivity {
 
 
     private static final int SPLASH_TIME_OUT = 6000;
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         //Splash Screen
 
         new Handler().postDelayed(() -> {
-            Intent intent = new Intent (MainActivity.this,Homepage.class);
+            Intent intent = new Intent (SplashScreen.this,Homepage.class);
             startActivity(intent);
             finish();
         },SPLASH_TIME_OUT);

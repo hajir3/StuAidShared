@@ -51,7 +51,7 @@
             android:exported="true"
             android:theme="@style/Theme.StuAid.Pages" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashScreen"
             android:screenOrientation="locked"
             android:exported="true"
             android:theme="@style/Theme.StuAid.SplashScreen">
