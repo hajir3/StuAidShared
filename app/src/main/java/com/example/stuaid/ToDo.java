@@ -24,6 +24,14 @@ import androidx.core.view.WindowInsetsControllerCompat;
                 "Eintrag 4",
                 "Eintrag 5",
                 "Eintrag 6",
+                "sdfaf" +
+                        "afdsf",
+                "sdalkd",
+                "slkdfasd",
+                "asdaösljd",
+                "sdfjlsf",
+                "lksdka",
+                "ljhsdpoad",
         };
 
     public void openActivityHomepage() {
@@ -51,7 +59,7 @@ import androidx.core.view.WindowInsetsControllerCompat;
 
 
         setListAdapter(new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1,eintrag));
+                android.R.layout.simple_expandable_list_item_1,eintrag));
     }
         public void onListItemClick(ListView parent, View v,
                                     int position, long id) {
