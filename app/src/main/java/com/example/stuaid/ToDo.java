@@ -44,14 +44,14 @@ import androidx.core.view.WindowInsetsControllerCompat;
         windowInsetsController.setAppearanceLightNavigationBars(true);
         windowInsetsController.setAppearanceLightStatusBars(true);
 
-        Button homeButton2 = findViewById(R.id.home_button_todo);
-        homeButton2.setOnClickListener(v ->openActivityHomepage());
+        Button homeButtonTodo = findViewById(R.id.home_button_todo);
+        homeButtonTodo.setOnClickListener(v ->openActivityHomepage());
 
-        Button planerButton = findViewById(R.id.planer_button_todo);
-        planerButton.setOnClickListener(v -> openActivityPlaner());
+        Button planerButtonTodo = findViewById(R.id.planer_button_todo);
+        planerButtonTodo.setOnClickListener(v -> openActivityPlaner());
 
-        Button notenButton = findViewById(R.id.noten_button_todo);
-        notenButton.setOnClickListener(v -> openActivityNoten());
+        Button notenButtonTodo = findViewById(R.id.noten_button_todo);
+        notenButtonTodo.setOnClickListener(v -> openActivityNoten());
 
     }
 }
