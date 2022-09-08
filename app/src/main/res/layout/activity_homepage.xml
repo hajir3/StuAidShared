@@ -10,7 +10,7 @@
 
     <TextView
         android:id="@+id/Logo"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/megrim"
         android:gravity="center"
@@ -34,7 +34,6 @@
         android:text="PLANER"
         android:textColor="#514440"
         android:textSize="19sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/noten_button"
         app:layout_constraintStart_toStartOf="parent" />
@@ -49,7 +48,6 @@
         android:text="NOTEN"
         android:textColor="#514440"
         android:textSize="19sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/todo_button"
         app:layout_constraintStart_toEndOf="@+id/planer_button" />
@@ -65,7 +63,6 @@
         android:text="TO-DO"
         android:textColor="#514440"
         android:textSize="19sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/noten_button" />
