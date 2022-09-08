@@ -9,18 +9,8 @@
     tools:context=".ToDo">
 
 
-    <ListView
-        android:id="@android:id/list"
-        android:layout_width="fill_parent"
-        android:layout_height="250dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="120dp" />
-
-
     <Button
-        android:id="@+id/home_button2"
+        android:id="@+id/home_button_todo"
         style="?android:attr/buttonBarButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -35,7 +25,8 @@
         app:layout_constraintStart_toStartOf="parent"/>
 
     <Button
-        android:id="@+id/planer_button"
+        style="!?android:attr/buttonBarButtonStyle"
+        android:id="@+id/planer_button_todo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -46,12 +37,11 @@
         android:textSize="19sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/noten_button"
+        app:layout_constraintEnd_toStartOf="@+id/noten_button_todo"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/noten_button"
-        style="?android:attr/buttonBarButtonStyle"
+        android:id="@+id/noten_button_todo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
@@ -62,11 +52,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/todo_button"
-        app:layout_constraintStart_toEndOf="@+id/planer_button" />
+        app:layout_constraintStart_toEndOf="@+id/planer_button_todo" />
 
     <TextView
         android:id="@+id/todo_button"
-        style="?android:attr/buttonBarButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
@@ -79,6 +68,6 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/noten_button" />
+        app:layout_constraintStart_toEndOf="@+id/noten_button_todo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
