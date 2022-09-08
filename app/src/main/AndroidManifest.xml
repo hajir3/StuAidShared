@@ -21,8 +21,7 @@
          android:exported gibt an, ob ein anderes Programm als android-studio die activity öffnen kann-->
 
         <activity
-<<<<<<< HEAD
-=======
+
             android:name=".Noten_Fach"
             android:screenOrientation="locked"
             android:exported="true"
@@ -33,7 +32,7 @@
             android:exported="true"
             android:theme="@style/Theme.StuAid.Pages"/>
         <activity
->>>>>>> 7e1b1b3a578510d4d75ace5fb6f83d6a0b8425ee
+
             android:name=".ToDo"
             android:screenOrientation="locked"
             android:exported="true"

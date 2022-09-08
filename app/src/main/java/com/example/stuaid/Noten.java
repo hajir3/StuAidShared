@@ -16,9 +16,6 @@ public class Noten extends AppCompatActivity {
         Intent intent = new Intent(this,Homepage.class);
         startActivity(intent);
         }
-    public void openActivityNoten_Semester(){
-        Intent intent = new Intent(this,Noten_Semester.class);
-        startActivity(intent);}
     public void openActivityPlaner() {
         Intent intent = new Intent(this,Planer.class);
         startActivity(intent);
@@ -27,6 +24,11 @@ public class Noten extends AppCompatActivity {
         Intent intent = new Intent(this,ToDo.class);
         startActivity(intent);
     }
+
+    public void openActivityNoten_Semester(){
+        Intent intent = new Intent(this,Noten_Semester.class);
+        startActivity(intent);}
+
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
