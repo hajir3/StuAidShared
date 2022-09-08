@@ -98,7 +98,7 @@
        android:id="@+id/noten_button"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:layout_marginBottom="60dp"
+       android:layout_marginBottom="70dp"
        android:background="#527E6552"
        android:fontFamily="@font/megrim"
        android:text="noten"

@@ -34,10 +34,26 @@ import androidx.core.view.WindowInsetsControllerCompat;
                 "ljhsdpoad",
         };
 
+    public void onListItemClick(ListView parent, View v,
+                                int position, long id) {
+        Toast.makeText(this, "Ihre Auswahl : " + eintrag[position],
+                Toast.LENGTH_LONG).show();
+    }
+
     public void openActivityHomepage() {
         Intent intent = new Intent(this,Homepage.class);
         startActivity(intent);
-    }
+        }
+    public void openActivityNoten(){
+        Intent intent = new Intent(this,Noten_Semester.class);
+        startActivity(intent);
+        }
+    public void openActivityPlaner() {
+        Intent intent = new Intent(this,Planer.class);
+        startActivity(intent);
+        }
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,15 +73,17 @@ import androidx.core.view.WindowInsetsControllerCompat;
         Button homeButton2 = findViewById(R.id.home_button2);
         homeButton2.setOnClickListener(v ->openActivityHomepage());
 
+        Button planerButton = findViewById(R.id.planer_button);
+        planerButton.setOnClickListener(v -> openActivityPlaner());
+
+        Button todoButton = findViewById(R.id.noten_button);
+        todoButton.setOnClickListener(v -> openActivityNoten());
+
 
         setListAdapter(new ArrayAdapter<String>(this,
                 android.R.layout.simple_expandable_list_item_1,eintrag));
     }
-        public void onListItemClick(ListView parent, View v,
-                                    int position, long id) {
-            Toast.makeText(this, "Ihre Auswahl : " + eintrag[position],
-                    Toast.LENGTH_LONG).show();
-        }
+
 
 
 
