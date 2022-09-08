@@ -13,5 +13,11 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="Theme.AppNavigation" parent="Theme.AppCompat">
+        <item name="android:textSize">19sp</item>
+        <item name="fontFamily">@font/suranna</item>
+        <item name="background">@android:color/transparent</item>
+
+    </style>
 
 </resources>

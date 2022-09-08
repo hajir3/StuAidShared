@@ -36,7 +36,6 @@
         android:text="PLANER"
         android:textColor="#3E3330"
         android:textSize="19sp"
-
         android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/noten_button_todo"
