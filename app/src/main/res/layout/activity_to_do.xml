@@ -1,77 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@drawable/backgroundmain4"
     android:orientation="vertical"
     tools:context=".ToDo">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:fontFamily="@font/acme"
-        android:text="To-Do"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText" />
 
     <Button
-        android:id="@+id/home_button"
-        style="?android:attr/buttonBarButtonStyle"
+        android:id="@+id/home_button_todo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
-        android:fontFamily="@font/acme"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/megrim"
         android:text="StuAid"
-        android:textColor="#000000"
+        android:textColor="#514440"
         android:textSize="19sp"
         android:textStyle="bold"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/planer_button_todo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/megrim"
+        android:text="planer"
+        android:textColor="#3E3330"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/noten_button_todo"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/noten_button_todo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/megrim"
+        android:text="noten"
+        android:textColor="#3E3330"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/todo_button"
+        app:layout_constraintStart_toEndOf="@+id/planer_button_todo" />
+
+    <Button
+        android:id="@+id/todo_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/megrim"
+        android:text="to-do"
+        android:textColor="#3E3330"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="HardcodedText" />
+        app:layout_constraintStart_toEndOf="@+id/noten_button_todo" />
 
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        tools:context=".ToDo"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="100dp">
-            <EditText
-                android:id="@+id/text_edit"
-                android:layout_width="262dp"
-                android:layout_height="67dp"
-                android:hint="Enter the item"
-                android:layout_marginStart="20dp"
-                tools:ignore="HardcodedText"
-                android:autofillHints="Your To-Do"
-                android:inputType="text" />
-
-            <ImageView
-                android:id="@+id/add_text"
-                android:layout_width="108dp"
-                android:layout_height="67dp"
-                android:layout_marginEnd="10dp"
-                android:src="@drawable/plus_neu"
-                android:contentDescription="Add Button"
-                tools:ignore="HardcodedText" />
-
-        <ListView
-            android:id="@+id/listview"
-            android:layout_width="434dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp" />
-
-    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

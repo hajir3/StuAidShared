@@ -17,28 +17,25 @@
         <entry key="..\:/Users/Haro/AndroidStudioProjects/StuAid2/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2056434373663959" />
         <entry key="..\:/Users/Haro/AndroidStudioProjects/StuAid2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.122" />
         <entry key="..\:/Users/Haro/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_homepage.xml" value="0.18541666666666667" />
-        <entry key="..\:/Users/Haro/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_noten.xml" value="0.3625" />
+        <entry key="..\:/Users/Haro/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_main.xml" value="0.2064814814814815" />
+        <entry key="..\:/Users/Haro/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_noten.xml" value="0.2064814814814815" />
+        <entry key="..\:/Users/Haro/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_noten_fach.xml" value="0.2953703703703704" />
+        <entry key="..\:/Users/Haro/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_noten_semester.xml" value="0.2953703703703704" />
         <entry key="..\:/Users/Haro/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_planer.xml" value="0.18541666666666667" />
-        <entry key="..\:/Users/Haro/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_to_do.xml" value="0.3625" />
-        <entry key="..\:/Users/Sandra/AndroidStudioProjects/StuAidShared/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.332" />
-        <entry key="..\:/Users/Sandra/AndroidStudioProjects/StuAidShared/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.332" />
-        <entry key="..\:/Users/Sandra/AndroidStudioProjects/StuAidShared/app/src/main/res/drawable/ic_launcher_background.xml" value="0.332" />
-        <entry key="..\:/Users/Sandra/AndroidStudioProjects/StuAidShared/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.332" />
-        <entry key="..\:/Users/Sandra/AndroidStudioProjects/StuAidShared/app/src/main/res/drawable/plus_neu2.0_foreground.xml" value="0.196" />
-        <entry key="..\:/Users/Sandra/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_noten.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Sandra/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_planer.xml" value="0.25" />
-        <entry key="..\:/Users/Sandra/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_planer2.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Sandra/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_planer_2.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Sandra/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/content_activity_planer2.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Sandra/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/fragment_first.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Sandra/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/fragment_second.xml" value="0.18802083333333333" />
-        <entry key="..\:/Users/Sandra/AndroidStudioProjects/StuAidShared/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.332" />
-        <entry key="..\:/Users/Sandra/AndroidStudioProjects/StuAidShared/app/src/main/res/mipmap-anydpi-v26/plus_neu2.0.xml" value="0.196" />
+        <entry key="..\:/Users/Haro/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_splashscreen.xml" value="0.3625" />
+        <entry key="..\:/Users/Haro/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_to_do.xml" value="0.2064814814814815" />
+        <entry key="..\:/Users/Haro/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/cornershape.xml" value="0.25052083333333336" />
         <entry key="..\:/Users/grimm/StudioProjects/StuAidShared/app/src/main/res/layout/activity_homepage.xml" value="0.33" />
         <entry key="..\:/Users/grimm/StudioProjects/StuAidShared/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/grimm/StudioProjects/StuAidShared/app/src/main/res/layout/activity_planer.xml" value="1.0" />
-        <entry key="..\:/Users/miche/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_noten.xml" value="0.2760416666666667" />
-        <entry key="..\:/Users/miche/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_planer.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/miche/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_homepage.xml" value="0.335" />
+        <entry key="..\:/Users/miche/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/miche/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_noten.xml" value="0.335" />
+        <entry key="..\:/Users/miche/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_noten_fach.xml" value="0.25" />
+        <entry key="..\:/Users/miche/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_noten_semester.xml" value="0.25" />
+        <entry key="..\:/Users/miche/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_planer.xml" value="0.335" />
+        <entry key="..\:/Users/miche/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_to_do.xml" value="0.335" />
+        <entry key="..\:/Users/miche/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/item.xml" value="0.2796875" />
       </map>
     </option>
   </component>

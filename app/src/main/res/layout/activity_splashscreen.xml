@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context=".SplashScreen">
+
+    <View
+        android:id="@+id/first"
+        android:layout_width="30dp"
+        android:layout_height="235dp"
+        android:background="@drawable/balkenorange"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/third"
+        app:layout_constraintEnd_toStartOf="@id/second" />
+
+    <View
+        android:id="@+id/second"
+        android:layout_width="30dp"
+        android:layout_height="170dp"
+        android:background="@drawable/balkengelb"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/first"
+        app:layout_constraintEnd_toStartOf="@id/fourth"/>
+
+    <View
+        android:id="@+id/third"
+        android:layout_width="30dp"
+        android:layout_height="150dp"
+        android:background="@drawable/balkengrun"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fifth"
+        app:layout_constraintEnd_toStartOf="@+id/first" />
+
+    <View
+        android:id="@+id/fourth"
+        android:layout_width="30dp"
+        android:layout_height="190dp"
+        android:background="@drawable/balkengrun"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/second"
+        app:layout_constraintEnd_toStartOf="@id/sixth"/>
+
+    <View
+        android:id="@+id/fifth"
+        android:layout_width="30dp"
+        android:layout_height="180dp"
+        android:background="@drawable/balkengelb"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/seventh"
+        app:layout_constraintEnd_toStartOf="@+id/third" />
+
+    <View
+        android:id="@+id/sixth"
+        android:layout_width="30dp"
+        android:layout_height="145dp"
+        android:background="@drawable/balkenorange"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fourth"
+        app:layout_constraintEnd_toStartOf="@id/eighth"/>
+
+    <View
+        android:id="@+id/seventh"
+        android:layout_width="30dp"
+        android:layout_height="135dp"
+        android:background="@drawable/balkenorange"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ninth"
+        app:layout_constraintEnd_toStartOf="@+id/fifth" />
+
+    <View
+        android:id="@+id/eighth"
+        android:layout_width="30dp"
+        android:layout_height="100dp"
+        android:background="@drawable/balkengelb"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/ninth"
+        android:layout_width="30dp"
+        android:layout_height="90dp"
+        android:background="@drawable/balkengrun"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/megrim"
+        android:text="StuAid"
+        android:textColor="#E6C38C"
+        android:textSize="80sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/Tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/megrim"
+        android:text="MADE BY M&amp;H"
+        android:textColor="#E6C38C"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

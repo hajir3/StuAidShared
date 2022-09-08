@@ -7,40 +7,56 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logo_black"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/logo_black_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.StuAid"
         tools:targetApi="31">
+
+        <!-- Modifikation der activities.
+         android:name gibt den Namen an.
+         android:screenOrientation gibt Orientation des Bildschirms an.
+         android:theme weist der activity ein bereits erstelltes Theme zu.
+         android:exported gibt an, ob ein anderes Programm als android-studio die activity öffnen kann-->
+
         <activity
-            android:name=".Planer_2"
-            android:exported="false"
-            android:label="@string/title_activity_planer2"
-            android:theme="@style/Theme.StuAid.NoActionBar" />
+            android:name=".Noten_Fach"
+            android:screenOrientation="locked"
+            android:exported="true"
+            android:theme="@style/Theme.StuAid.Pages"/>
+        <activity
+            android:name=".Noten_Semester"
+            android:screenOrientation="locked"
+            android:exported="true"
+            android:theme="@style/Theme.StuAid.Pages"/>
         <activity
             android:name=".ToDo"
+            android:screenOrientation="locked"
             android:exported="true"
             android:theme="@style/Theme.StuAid.Pages" />
         <activity
             android:name=".Noten"
+            android:screenOrientation="locked"
             android:exported="true"
             android:theme="@style/Theme.StuAid.Pages" />
         <activity
             android:name=".Planer"
+            android:screenOrientation="locked"
             android:exported="true"
             android:theme="@style/Theme.StuAid.Pages" />
         <activity
             android:name=".Homepage"
+            android:screenOrientation="locked"
             android:exported="true"
             android:theme="@style/Theme.StuAid.Pages" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashScreen"
+            android:screenOrientation="locked"
             android:exported="true"
             android:theme="@style/Theme.StuAid.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
