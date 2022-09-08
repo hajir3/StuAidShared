@@ -11,7 +11,6 @@
 
     <Button
         android:id="@+id/home_button_todo"
-        style="?android:attr/buttonBarButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
@@ -20,12 +19,12 @@
         android:textColor="#514440"
         android:textSize="19sp"
         android:textStyle="bold"
+        android:background="@android:color/transparent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
     <Button
-        style="!?android:attr/buttonBarButtonStyle"
         android:id="@+id/planer_button_todo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,6 +35,7 @@
         android:textColor="#3E3330"
         android:textSize="19sp"
         android:textStyle="bold"
+        android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/noten_button_todo"
         app:layout_constraintStart_toStartOf="parent" />
@@ -50,22 +50,25 @@
         android:textColor="#3E3330"
         android:textSize="19sp"
         android:textStyle="bold"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/todo_button"
         app:layout_constraintStart_toEndOf="@+id/planer_button_todo" />
 
-    <TextView
+    <Button
         android:id="@+id/todo_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="60dp"
         android:fontFamily="@font/megrim"
-        android:background="#527E6552"
         android:text="to-do"
         android:textColor="#3E3330"
         android:textSize="19sp"
         android:textStyle="bold"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/noten_button_todo" />

@@ -11,8 +11,5 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="ButtonBarStyle">
-        <item name="font">@font/megrim</item>
-    </style>
 
 </resources>
