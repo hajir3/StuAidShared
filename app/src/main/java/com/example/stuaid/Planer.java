@@ -1,69 +1,53 @@
 package com.example.stuaid;
 
-import static com.example.stuaid.R.id.add_item;
-
-import android.annotation.SuppressLint;
-import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
+import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.ListView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import java.util.ArrayList;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowCompat;
+import androidx.core.view.WindowInsetsControllerCompat;
 
 public class Planer extends AppCompatActivity {
 
-    private ArrayList<String> items;
-    private ArrayAdapter<String> itemsAdapter;
-    private ListView listView;
-    @SuppressLint("WrongViewCast")
-    private Button button = findViewById(add_item);
 
-/*
+    public void openActivityHomepage() {
+        Intent intent = new Intent(this,Homepage.class);
+        startActivity(intent);
+    }
+    public void openActivityNoten() {
+        Intent intent = new Intent(this,Noten.class);
+        startActivity(intent);
+    }
+    public void openActivityToDo() {
+        Intent intent = new Intent(this,ToDo.class);
+        startActivity(intent);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_planer);
 
-        listView = findViewById(R.id.listView);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                addItem(view);
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
+        getWindow().setFlags(
+                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+        WindowInsetsControllerCompat windowInsetsController =
+                ViewCompat.getWindowInsetsController(getWindow().getDecorView());
+        if (windowInsetsController == null) {
+            return;
+        }
+        windowInsetsController.setAppearanceLightNavigationBars(true);
+        windowInsetsController.setAppearanceLightStatusBars(true);
 
-            }
-        });
-        items = new ArrayList<>();
-        itemsAdapter   = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, items);
-        listView.setAdapter(itemsAdapter);
-        setupListViewListener();
+        Button homeButton3 = findViewById(R.id.home_button3);
+        homeButton3.setOnClickListener(v ->openActivityHomepage());
+        Button notenButton = findViewById(R.id.noten_button);
+        notenButton.setOnClickListener(v -> openActivityNoten());
+        Button todoButton = findViewById(R.id.todo_button);
+        todoButton.setOnClickListener(v -> openActivityToDo());
     }
-
-    private void setupListViewListener() {
-        return listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-            @Override
-            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Context context = getApplicationContext();
-                Toast.makeText(context, resid;"Item removed";
-                items.remove(i);
-                itemsAdapter.notifyDataSetChanged();
-                return true;
-
-            }
-
-        });
-    }
-
-    private void addItem(View view) {
-    }
-
-
-     */
 }
 
 

@@ -4,85 +4,128 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@drawable/backgroundmain4"
+    android:orientation="vertical"
     tools:context=".Noten">
 
-    <Button
-        android:id="@+id/home_button"
-        style="?android:attr/buttonBarButtonStyle"
+   <Button
+       android:id="@+id/home_button"
+       style="?android:attr/buttonBarButtonStyle"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="40dp"
+       android:fontFamily="@font/megrim"
+       android:text="StuAid"
+       android:textColor="#3E3330"
+       android:textSize="24sp"
+       android:textStyle="bold"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.498"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       tools:ignore="HardcodedText" />
+
+
+
+   <TextView
+        android:id="@+id/button_semester"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
-        android:fontFamily="@font/acme"
-        android:text="StuAid"
-        android:textColor="#000000"
-        android:textSize="19dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageButton
-        android:id="@+id/add_item"
-        android:layout_width="40dp"
-        android:layout_height="37dp"
         android:layout_marginStart="40dp"
-        android:layout_marginBottom="80dp"
-        android:hapticFeedbackEnabled="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/plus_neu"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/noten"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:fontFamily="@font/acme"
-        android:text="NOTEN"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/semester"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:text="SEMESTER"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="270dp"
-        android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
-        android:layout_marginStart="40dp"
-        android:text="Button"
-        app:layout_constraintEnd_toStartOf="@+id/durchschnitt_1"
-        app:layout_constraintHorizontal_bias="0"
+        android:text="Semester"
+        android:textColor="#3E3330"
+        android:textStyle="bold"
+        android:fontFamily="@font/megrim"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
 
-    <TextView
+   <TextView
         android:id="@+id/durchschnitt_1"
-        android:layout_width="204dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
-        android:text="TextView"
+        android:text="\u00D8"
+        android:textColor="#3E3330"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/kompensationspunkte"
+        android:layout_marginEnd="40dp"
+        tools:ignore="HardcodedText"
+        tools:layout_editor_absoluteX="169dp" />
+
+   <TextView
+        android:id="@+id/kompensationspunkte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="40dp"
+        android:text="+/-"
+        android:textColor="#3E3330"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button"
+        tools:ignore="HardcodedText"
+        tools:layout_editor_absoluteX="169dp" />
+
+    <Button
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
+   <Button
+       android:id="@+id/planer_button"
+       style="?android:attr/buttonBarButtonStyle"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="20dp"
+       android:layout_marginBottom="60dp"
+       android:fontFamily="@font/megrim"
+       android:text="planer"
+       android:textColor="#3E3330"
+       android:textSize="19sp"
+       android:textStyle="bold"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toStartOf="@+id/noten_button"
+       app:layout_constraintStart_toStartOf="parent" />
+
+   <TextView
+       android:id="@+id/noten_button"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="70dp"
+       android:background="#527E6552"
+       android:fontFamily="@font/megrim"
+       android:text="noten"
+       android:textColor="#3E3330"
+       android:textSize="19sp"
+       android:textStyle="bold"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toStartOf="@+id/todo_button"
+       app:layout_constraintStart_toEndOf="@+id/planer_button" />
+
+   <Button
+       android:id="@+id/todo_button"
+       style="?android:attr/buttonBarButtonStyle"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginEnd="20dp"
+       android:layout_marginBottom="60dp"
+       android:fontFamily="@font/megrim"
+       android:text="to-do"
+       android:textColor="#3E3330"
+       android:textSize="19sp"
+       android:textStyle="bold"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toEndOf="@+id/noten_button" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
 

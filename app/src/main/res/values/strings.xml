@@ -15,5 +15,6 @@
     <string name="planer">Planer</string>
     <string name="noten">Noten</string>
     <string name="to_do">To-Do</string>
-    <string name="title_activity_planer2">activity_planer_2</string>
+    <string name="stuaid">StuAid</string>
+    <string name="made_by_m_amp_h"><![CDATA[Made by M&H]]></string>
 </resources>

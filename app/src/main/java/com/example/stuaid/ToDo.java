@@ -1,73 +1,60 @@
 package com.example.stuaid;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
+import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.ListView;
-import android.widget.Toast;
 
-import com.example.stuaid.R;
-
-import java.util.ArrayList;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowCompat;
+import androidx.core.view.WindowInsetsControllerCompat;
 
 
-public class ToDo extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemLongClickListener {
-    private EditText ed;
-    private ImageView adding_items;
-    private ListView item_list;
-    private ArrayList<String> values=new ArrayList<String>(); //ArrayList takes the user input
-    private ArrayAdapter<String> adapter; // ArrayAdapter is used to insert a value in ListView
+
+    public class ToDo extends AppCompatActivity {
+
+
+    public void openActivityHomepage() {
+        Intent intent = new Intent(this,Homepage.class);
+        startActivity(intent);
+        }
+    public void openActivityNoten(){
+        Intent intent = new Intent(this,Noten.class);
+        startActivity(intent);
+        }
+    public void openActivityPlaner() {
+        Intent intent = new Intent(this,Planer.class);
+        startActivity(intent);
+        }
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        ed = findViewById(R.id.text_edit);
-        adding_items = findViewById(R.id.add_text);
-        item_list = findViewById(R.id.listview);
+        setContentView(R.layout.activity_to_do);
 
-        adding_items.setOnClickListener(this);
-        item_list.setOnItemLongClickListener(this); // Giving the reference of the onclick function
-    }
-
-    @Override
-    public void onClick(View view) {
-        String add_item=ed.getText().toString();
-        if(values.contains(add_item))// Checks the condition if item exists return the message displayed on Toast
-        {
-            Toast.makeText(getBaseContext(),"Item Already Exist", Toast.LENGTH_LONG).show();
-        } // Enter the element if it does not exist
-        else
-        {
-            values.add(add_item);
-            adapter=new ArrayAdapter<String>(ToDo.this,android.R.layout.simple_list_item_1,values);
-            item_list.setAdapter(adapter);
-            ed.setText("");
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
+        getWindow().setFlags(
+                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+        WindowInsetsControllerCompat windowInsetsController =
+                ViewCompat.getWindowInsetsController(getWindow().getDecorView());
+        if (windowInsetsController == null) {
+            return;
         }
-    }
+        windowInsetsController.setAppearanceLightNavigationBars(true);
+        windowInsetsController.setAppearanceLightStatusBars(true);
 
-    @Override
-    public boolean onItemLongClick(AdapterView<?> adapterView, View view, int position, long l) {
-        final int removing_item=position;
-        AlertDialog.Builder builder = new AlertDialog.Builder(ToDo.this); // Ask the user to get the confirmation before deleting an item from the listView
-        builder.setMessage("Do you want to delete").setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                values.remove(removing_item);
-                adapter.notifyDataSetChanged();
-                Toast.makeText(getBaseContext(), "Item Deleted", Toast.LENGTH_LONG).show();
-            }
-        }).setNegativeButton("Cancel", null).show();
+        Button homeButton2 = findViewById(R.id.home_button_todo);
+        homeButton2.setOnClickListener(v ->openActivityHomepage());
 
+        Button planerButton = findViewById(R.id.planer_button_todo);
+        planerButton.setOnClickListener(v -> openActivityPlaner());
 
+        Button notenButton = findViewById(R.id.noten_button_todo);
+        notenButton.setOnClickListener(v -> openActivityNoten());
 
-        return true;
     }
 }
+
+
