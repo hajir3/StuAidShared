@@ -74,7 +74,7 @@ public class SplashScreen extends AppCompatActivity {
         //Splash Screen
 
         new Handler().postDelayed(() -> {
-            Intent intent = new Intent (SplashScreen.this,Homepage.class);
+            Intent intent = new Intent (SplashScreen.this,Test1.class);
             startActivity(intent);
             finish();
         },SPLASH_TIME_OUT);
