@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_exams"
+        android:icon="@drawable/ic_exams"
+        android:title="EXAMS" />
+
+    <item
+        android:id="@+id/navigation_grades"
+        android:icon="@drawable/ic_grades"
+        android:title="GRADES" />
+
+    <item
+        android:id="@+id/navigation_tasks"
+        android:icon="@drawable/ic_tasks"
+        android:title="TASKS" />
+
+</menu>
