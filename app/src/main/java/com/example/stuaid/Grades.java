@@ -1,7 +1,20 @@
 package com.example.stuaid;
 
+import android.annotation.SuppressLint;
+import android.app.WallpaperManager;
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.Paint;
+import android.graphics.drawable.BitmapDrawable;
+import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
+import android.renderscript.Allocation;
+import android.renderscript.Element;
+import android.renderscript.RenderScript;
+import android.renderscript.ScriptIntrinsicBlur;
+import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 
@@ -9,6 +22,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowCompat;
 import androidx.core.view.WindowInsetsControllerCompat;
+import androidx.loader.content.AsyncTaskLoader;
+
+import java.security.AllPermission;
 
 public class Grades extends AppCompatActivity {
 
@@ -27,8 +43,8 @@ public class Grades extends AppCompatActivity {
 
     public void openActivityNoten_Semester(){
         Intent intent = new Intent(this, Grades_Semester.class);
-        startActivity(intent);}
-
+        startActivity(intent);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +62,6 @@ public class Grades extends AppCompatActivity {
         windowInsetsController.setAppearanceLightStatusBars(true);
 
 
-
         Button planerButtonNoten = findViewById(R.id.exams_button_grades);
         planerButtonNoten.setOnClickListener(v -> openActivityPlaner());
 
@@ -56,10 +71,11 @@ public class Grades extends AppCompatActivity {
         Button homeButtonNoten = findViewById(R.id.home_button_grades);
         homeButtonNoten.setOnClickListener(v -> openActivityHomepage());
 
-
-
         Button testButton = findViewById(R.id.test);
         testButton.setOnClickListener(v -> openActivityNoten_Semester());
+
+
+
     }
 
 

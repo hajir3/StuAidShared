@@ -47,16 +47,17 @@
 
    <Button
        android:id="@+id/grades_button_grades"
-       android:drawableTop="@drawable/ic_grades"
-       android:drawablePadding="-5sp"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:layout_marginBottom="60dp"
+       android:background="@drawable/gradient_background_buttons"
+       android:clickable="false"
+       android:drawableTop="@drawable/ic_grades"
+       android:drawablePadding="-5sp"
        android:fontFamily="@font/suranna"
        android:text="@string/grades"
        android:textColor="#3E3330"
        android:textSize="19sp"
-       android:background="@android:color/transparent"
        app:layout_constraintBottom_toBottomOf="parent"
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintStart_toStartOf="parent" />
