@@ -10,20 +10,30 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowCompat;
 import androidx.core.view.WindowInsetsControllerCompat;
 
-public class Noten_Semester extends AppCompatActivity {
+public class Grades extends AppCompatActivity {
 
     public void openActivityHomepage() {
         Intent intent = new Intent(this,Homepage.class);
         startActivity(intent);
+        }
+    public void openActivityPlaner() {
+        Intent intent = new Intent(this, Exams.class);
+        startActivity(intent);
     }
-    public void openActivityNoten_Fach(){
-        Intent intent = new Intent(this,Noten_Fach.class);
+    public void openActivityToDo() {
+        Intent intent = new Intent(this, Task.class);
+        startActivity(intent);
+    }
+
+    public void openActivityNoten_Semester(){
+        Intent intent = new Intent(this, Grades_Semester.class);
         startActivity(intent);}
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_noten_semester);
+        setContentView(R.layout.activity_grades);
         WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
         getWindow().setFlags(
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
@@ -37,10 +47,21 @@ public class Noten_Semester extends AppCompatActivity {
 
 
 
-        Button homeButton = findViewById(R.id.home_button);
-        homeButton.setOnClickListener(v -> openActivityHomepage());
+        Button planerButtonNoten = findViewById(R.id.planer_button_noten);
+        planerButtonNoten.setOnClickListener(v -> openActivityPlaner());
 
-        Button test2Button = findViewById(R.id.test2);
-        test2Button.setOnClickListener(v -> openActivityNoten_Fach());
+        Button todoButtonNoten = findViewById(R.id.todo_button_noten);
+        todoButtonNoten.setOnClickListener(v -> openActivityToDo());
+
+        Button homeButtonNoten = findViewById(R.id.home_button_noten);
+        homeButtonNoten.setOnClickListener(v -> openActivityHomepage());
+
+
+
+        Button testButton = findViewById(R.id.test);
+        testButton.setOnClickListener(v -> openActivityNoten_Semester());
     }
+
+
 }
+

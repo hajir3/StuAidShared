@@ -10,25 +10,28 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowCompat;
 import androidx.core.view.WindowInsetsControllerCompat;
 
-public class Planer extends AppCompatActivity {
+
+    public class Task extends AppCompatActivity {
 
 
     public void openActivityHomepage() {
         Intent intent = new Intent(this,Homepage.class);
         startActivity(intent);
-    }
-    public void openActivityNoten() {
-        Intent intent = new Intent(this,Noten.class);
+        }
+    public void openActivityNoten(){
+        Intent intent = new Intent(this, Grades.class);
         startActivity(intent);
-    }
-    public void openActivityToDo() {
-        Intent intent = new Intent(this,ToDo.class);
+        }
+    public void openActivityPlaner() {
+        Intent intent = new Intent(this, Exams.class);
         startActivity(intent);
-    }
+        }
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_planer);
+        setContentView(R.layout.activity_task);
 
         WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
         getWindow().setFlags(
@@ -41,12 +44,15 @@ public class Planer extends AppCompatActivity {
         windowInsetsController.setAppearanceLightNavigationBars(true);
         windowInsetsController.setAppearanceLightStatusBars(true);
 
-        Button homeButton3 = findViewById(R.id.home_button3);
-        homeButton3.setOnClickListener(v ->openActivityHomepage());
-        Button notenButton = findViewById(R.id.noten_button);
-        notenButton.setOnClickListener(v -> openActivityNoten());
-        Button todoButton = findViewById(R.id.todo_button);
-        todoButton.setOnClickListener(v -> openActivityToDo());
+        Button homeButtonTodo = findViewById(R.id.home_button_todo);
+        homeButtonTodo.setOnClickListener(v ->openActivityHomepage());
+
+        Button planerButtonTodo = findViewById(R.id.planer_button_todo);
+        planerButtonTodo.setOnClickListener(v -> openActivityPlaner());
+
+        Button notenButtonTodo = findViewById(R.id.noten_button_todo);
+        notenButtonTodo.setOnClickListener(v -> openActivityNoten());
+
     }
 }
 

@@ -17,4 +17,7 @@
     <string name="to_do">To-Do</string>
     <string name="stuaid">StuAid</string>
     <string name="made_by_m_amp_h"><![CDATA[Made by M&H]]></string>
+    <string name="tasks">TASKS</string>
+    <string name="grades">GRADES</string>
+    <string name="exams">EXAMS</string>
 </resources>

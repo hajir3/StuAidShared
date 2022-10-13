@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/backgroundmain4"
     android:orientation="vertical"
-    tools:context=".Noten">
+    tools:context=".Grades">
 
    <Button
        android:id="@+id/home_button_noten"
@@ -17,7 +17,7 @@
        android:fontFamily="@font/megrim"
        android:lineSpacingExtra="60sp"
        android:rotationX="0"
-       android:text="StuAid"
+       android:text="@string/stuaid"
        android:textAllCaps="false"
        android:textColor="#514440"
        android:textSize="24sp"
@@ -35,7 +35,7 @@
        android:layout_marginBottom="60dp"
        android:layout_marginEnd="10dp"
        android:fontFamily="@font/suranna"
-       android:text="PLANER"
+       android:text="@string/exams"
        android:textColor="#3E3330"
        android:textSize="19sp"
        android:background="@android:color/transparent"
@@ -49,7 +49,7 @@
        android:layout_height="wrap_content"
        android:layout_marginBottom="60dp"
        android:fontFamily="@font/suranna"
-       android:text="NOTEN"
+       android:text="@string/grades"
        android:textColor="#3E3330"
        android:textSize="19sp"
        android:background="@android:color/transparent"
@@ -64,7 +64,7 @@
        android:layout_marginBottom="60dp"
        android:layout_marginStart="5dp"
        android:fontFamily="@font/suranna"
-       android:text="TO-DO"
+       android:text="@string/tasks"
        android:textColor="#3E3330"
        android:textSize="19sp"
        android:background="@android:color/transparent"

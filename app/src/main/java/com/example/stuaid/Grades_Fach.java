@@ -10,7 +10,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowCompat;
 import androidx.core.view.WindowInsetsControllerCompat;
 
-public class Noten_Fach extends AppCompatActivity {
+public class Grades_Fach extends AppCompatActivity {
 
 
     public void openActivityHomepage() {
@@ -21,7 +21,7 @@ public class Noten_Fach extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_noten_fach);
+        setContentView(R.layout.activity_grades_fach);
         WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
         getWindow().setFlags(
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);

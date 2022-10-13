@@ -20,7 +20,24 @@
         <entry key="..\:/Users/Haro/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_noten.xml" value="0.3625" />
         <entry key="..\:/Users/Haro/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_planer.xml" value="0.18541666666666667" />
         <entry key="..\:/Users/Haro/AndroidStudioProjects/StuAidShared/app/src/main/res/layout/activity_to_do.xml" value="0.3625" />
-        <entry key="..\:/Users/grimm/Documents/GitHub/StuAidShared/app/src/main/res/layout/activity_homepage.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/grimm/Documents/GitHub/StuAidShared/app/src/main/res/drawable-v24/ic_exams.xml" value="0.2705" />
+        <entry key="..\:/Users/grimm/Documents/GitHub/StuAidShared/app/src/main/res/drawable-v24/ic_grades.xml" value="0.2705" />
+        <entry key="..\:/Users/grimm/Documents/GitHub/StuAidShared/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2705" />
+        <entry key="..\:/Users/grimm/Documents/GitHub/StuAidShared/app/src/main/res/drawable-v24/ic_tasks.xml" value="0.2705" />
+        <entry key="..\:/Users/grimm/Documents/GitHub/StuAidShared/app/src/main/res/drawable/add_foreground.xml" value="0.2705" />
+        <entry key="..\:/Users/grimm/Documents/GitHub/StuAidShared/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.2705" />
+        <entry key="..\:/Users/grimm/Documents/GitHub/StuAidShared/app/src/main/res/drawable/ic_exams.xml" value="0.2705" />
+        <entry key="..\:/Users/grimm/Documents/GitHub/StuAidShared/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.2705" />
+        <entry key="..\:/Users/grimm/Documents/GitHub/StuAidShared/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2705" />
+        <entry key="..\:/Users/grimm/Documents/GitHub/StuAidShared/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.2705" />
+        <entry key="..\:/Users/grimm/Documents/GitHub/StuAidShared/app/src/main/res/drawable/icon_foreground.xml" value="0.2705" />
+        <entry key="..\:/Users/grimm/Documents/GitHub/StuAidShared/app/src/main/res/layout/activity_exams.xml" value="0.33" />
+        <entry key="..\:/Users/grimm/Documents/GitHub/StuAidShared/app/src/main/res/layout/activity_grades.xml" value="0.33" />
+        <entry key="..\:/Users/grimm/Documents/GitHub/StuAidShared/app/src/main/res/layout/activity_grades_fach.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/grimm/Documents/GitHub/StuAidShared/app/src/main/res/layout/activity_grades_semester.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/grimm/Documents/GitHub/StuAidShared/app/src/main/res/layout/activity_homepage.xml" value="0.33" />
+        <entry key="..\:/Users/grimm/Documents/GitHub/StuAidShared/app/src/main/res/layout/activity_planer.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/grimm/Documents/GitHub/StuAidShared/app/src/main/res/layout/activity_task.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/grimm/StudioProjects/StuAidShared/app/src/main/res/layout/activity_homepage.xml" value="0.33" />
         <entry key="..\:/Users/grimm/StudioProjects/StuAidShared/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/grimm/StudioProjects/StuAidShared/app/src/main/res/layout/activity_planer.xml" value="1.0" />

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/backgroundmain4"
     android:orientation="vertical"
-    tools:context=".ToDo">
+    tools:context=".Task">
 
 
     <Button
@@ -33,7 +33,7 @@
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="60dp"
         android:fontFamily="@font/suranna"
-        android:text="PLANER"
+        android:text="@string/exams"
         android:textColor="#3E3330"
         android:textSize="19sp"
         android:background="@android:color/transparent"
@@ -50,7 +50,7 @@
         android:backgroundTint="@android:color/transparent"
         android:fontFamily="@font/suranna"
         android:gravity="center_horizontal"
-        android:text="NOTEN"
+        android:text="@string/grades"
         android:textColor="#3E3330"
         android:textSize="19sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -69,7 +69,7 @@
         android:fontFamily="@font/suranna"
         android:outlineAmbientShadowColor="@android:color/transparent"
         android:outlineSpotShadowColor="@android:color/transparent"
-        android:text="TO-DO"
+        android:text="@string/tasks"
         android:textColor="#3E3330"
         android:textSize="19sp"
         app:layout_constraintBottom_toBottomOf="parent"

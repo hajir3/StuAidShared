@@ -26,28 +26,28 @@
 
         <activity
 
-            android:name=".Noten_Fach"
+            android:name=".Grades_Fach"
             android:screenOrientation="locked"
             android:exported="true"
             android:theme="@style/Theme.StuAid.Pages"/>
         <activity
-            android:name=".Noten_Semester"
+            android:name=".Grades_Semester"
             android:screenOrientation="locked"
             android:exported="true"
             android:theme="@style/Theme.StuAid.Pages"/>
         <activity
 
-            android:name=".ToDo"
+            android:name=".Task"
             android:screenOrientation="locked"
             android:exported="true"
             android:theme="@style/Theme.StuAid.Pages" />
         <activity
-            android:name=".Noten"
+            android:name=".Grades"
             android:screenOrientation="locked"
             android:exported="true"
             android:theme="@style/Theme.StuAid.Pages" />
         <activity
-            android:name=".Planer"
+            android:name=".Exams"
             android:screenOrientation="locked"
             android:exported="true"
             android:theme="@style/Theme.StuAid.Pages" />

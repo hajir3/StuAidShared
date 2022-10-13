@@ -6,11 +6,10 @@
     android:layout_height="match_parent"
     android:background="@drawable/backgroundmain4"
     android:orientation="vertical"
-    tools:context=".Planer"
-    >
+    tools:context=".Exams">
 
     <Button
-        android:id="@+id/home_button3"
+        android:id="@+id/home_button_exams"
         style="?android:attr/buttonBarButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -27,49 +26,55 @@
 
 
     <TextView
-        android:id="@+id/planer_button"
-        style="?android:attr/buttonBarButtonStyle"
+        android:id="@+id/exams_button_exams"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginBottom="60dp"
-        android:background="#527E6552"
+        android:background="@android:color/transparent"
+        android:drawablePadding="-5sp"
         android:fontFamily="@font/suranna"
-        android:text="PLANER"
-        android:textColor="#3E3330"
+        android:text="@string/exams"
+        android:textColor="#514440"
         android:textSize="19sp"
+        app:drawableTopCompat="@drawable/ic_exams"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/noten_button"
+        app:layout_constraintEnd_toStartOf="@+id/grades_button_exams"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/noten_button"
-        style="?android:attr/buttonBarButtonStyle"
+        android:id="@+id/grades_button_exams"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/ic_grades"
+        android:drawablePadding="-5sp"
         android:fontFamily="@font/suranna"
-        android:text="NOTEN"
-        android:textColor="#3E3330"
+        android:text="@string/grades"
+        android:textColor="#514440"
         android:textSize="19sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/todo_button"
-        app:layout_constraintStart_toEndOf="@+id/planer_button" />
+        app:layout_constraintEnd_toStartOf="@+id/tasks_button_exams"
+        app:layout_constraintStart_toEndOf="@+id/exams_button_exams" />
 
     <Button
-        android:id="@+id/todo_button"
-        style="?android:attr/buttonBarButtonStyle"
+        android:id="@+id/tasks_button_exams"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="60dp"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/ic_tasks"
+        android:drawablePadding="-5sp"
         android:fontFamily="@font/suranna"
-        android:text="TO-DO"
-        android:textColor="#3E3330"
+        android:text="@string/tasks"
+        android:textColor="#514440"
         android:textSize="19sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/noten_button" />
+        app:layout_constraintStart_toEndOf="@+id/grades_button_exams" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,15 +15,15 @@ public class Homepage extends AppCompatActivity {
 
 
     public void openActivityPlaner() {
-        Intent intent = new Intent(this,Planer.class);
+        Intent intent = new Intent(this, Exams.class);
         startActivity(intent);
     }
     public void openActivityNoten() {
-        Intent intent = new Intent(this,Noten.class);
+        Intent intent = new Intent(this, Grades.class);
         startActivity(intent);
     }
     public void openActivityToDo() {
-        Intent intent = new Intent(this,ToDo.class);
+        Intent intent = new Intent(this, Task.class);
         startActivity(intent);
     }
     @Override
@@ -47,11 +47,11 @@ public class Homepage extends AppCompatActivity {
 
 
 
-        Button planerButton = findViewById(R.id.planer_button_homepage);
+        Button planerButton = findViewById(R.id.exams_button_homepage);
         planerButton.setOnClickListener(v -> openActivityPlaner());
-        Button notenButton = findViewById(R.id.noten_button_homepage);
+        Button notenButton = findViewById(R.id.grades_button_homepage);
         notenButton.setOnClickListener(v -> openActivityNoten());
-        Button todoButton = findViewById(R.id.todo_button_hompage);
+        Button todoButton = findViewById(R.id.tasks_button_hompage);
         todoButton.setOnClickListener(v -> openActivityToDo());
     }
 }

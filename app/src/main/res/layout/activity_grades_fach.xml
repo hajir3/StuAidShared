@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/backgroundmain4"
     android:orientation="vertical"
-    tools:context=".Noten_Fach">
+    tools:context=".Grades_Fach">
 
     <Button
         android:id="@+id/home_button"
@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
         android:fontFamily="@font/suranna"
-        android:text="NOTEN"
+        android:text="@string/grades"
         android:textColor="#3E3330"
         android:textSize="19sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -68,7 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="120dp"
-        android:text="PRUFUNG"
+        android:text="@string/exams"
         android:textColor="#3E3330"
         android:fontFamily="@font/suranna"
         app:layout_constraintStart_toStartOf="parent"
