@@ -9,7 +9,7 @@
     tools:context=".Grades">
 
    <Button
-       android:id="@+id/home_button_noten"
+       android:id="@+id/home_button_grades"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:layout_marginTop="60dp"
@@ -29,22 +29,26 @@
        tools:text="StuAid" />
 
    <Button
-       android:id="@+id/planer_button_noten"
+       android:id="@+id/exams_button_grades"
+       android:drawableTop="@drawable/ic_exams"
+       android:drawablePadding="-5sp"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
+       android:layout_marginStart="20dp"
        android:layout_marginBottom="60dp"
-       android:layout_marginEnd="10dp"
        android:fontFamily="@font/suranna"
        android:text="@string/exams"
        android:textColor="#3E3330"
        android:textSize="19sp"
        android:background="@android:color/transparent"
        app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toStartOf="@+id/noten_button_noten"
+       app:layout_constraintEnd_toStartOf="@+id/grades_button_grades"
        app:layout_constraintStart_toStartOf="parent"/>
 
    <Button
-       android:id="@+id/noten_button_noten"
+       android:id="@+id/grades_button_grades"
+       android:drawableTop="@drawable/ic_grades"
+       android:drawablePadding="-5sp"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:layout_marginBottom="60dp"
@@ -58,11 +62,13 @@
        app:layout_constraintStart_toStartOf="parent" />
 
    <Button
-       android:id="@+id/todo_button_noten"
+       android:id="@+id/tasks_button_grades"
+       android:drawableTop="@drawable/ic_tasks"
+       android:drawablePadding="-5sp"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:layout_marginBottom="60dp"
-       android:layout_marginStart="5dp"
+       android:layout_marginEnd="20dp"
        android:fontFamily="@font/suranna"
        android:text="@string/tasks"
        android:textColor="#3E3330"
@@ -70,7 +76,7 @@
        android:background="@android:color/transparent"
        app:layout_constraintBottom_toBottomOf="parent"
        app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintStart_toEndOf="@+id/noten_button_noten" />
+       app:layout_constraintStart_toEndOf="@+id/grades_button_grades" />
 
 
 

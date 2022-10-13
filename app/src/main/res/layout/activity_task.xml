@@ -10,7 +10,7 @@
 
 
     <Button
-        android:id="@+id/home_button_todo"
+        android:id="@+id/home_button_tasks"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
@@ -26,11 +26,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/planer_button_todo"
+        android:id="@+id/exams_button_tasks"
+        android:drawableTop="@drawable/ic_exams"
+        android:drawablePadding="-5sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="5dp"
+        android:layout_marginStart="20dp"
         android:layout_marginBottom="60dp"
         android:fontFamily="@font/suranna"
         android:text="@string/exams"
@@ -38,42 +39,40 @@
         android:textSize="19sp"
         android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/noten_button_todo"
+        app:layout_constraintEnd_toStartOf="@+id/grades_button_tasks"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/noten_button_todo"
+        android:id="@+id/grades_button_tasks"
+        android:drawableTop="@drawable/ic_grades"
+        android:drawablePadding="-5sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
-        android:background="@android:color/transparent"
-        android:backgroundTint="@android:color/transparent"
         android:fontFamily="@font/suranna"
-        android:gravity="center_horizontal"
         android:text="@string/grades"
         android:textColor="#3E3330"
         android:textSize="19sp"
+        android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/todo_button_todo"
+        android:id="@+id/tasks_button_tasks"
+        android:drawableTop="@drawable/ic_tasks"
+        android:drawablePadding="-5sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="30dp"
         android:layout_marginBottom="60dp"
-        android:backgroundTint="#DCA456"
-        android:clickable="false"
+        android:layout_marginEnd="20dp"
         android:fontFamily="@font/suranna"
-        android:outlineAmbientShadowColor="@android:color/transparent"
-        android:outlineSpotShadowColor="@android:color/transparent"
         android:text="@string/tasks"
         android:textColor="#3E3330"
         android:textSize="19sp"
+        android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/noten_button_todo" />
+        app:layout_constraintStart_toEndOf="@+id/grades_button_tasks" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
