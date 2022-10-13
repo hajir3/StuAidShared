@@ -1,4 +1,4 @@
-package com.example.stuaid.activities;
+package com.example.stuaid;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,22 +10,32 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowCompat;
 import androidx.core.view.WindowInsetsControllerCompat;
 
-import com.example.stuaid.R;
+import com.example.stuaid.activities.Exams;
+import com.example.stuaid.activities.Homepage;
 
-public class Grades_Semester extends AppCompatActivity {
+
+public class Task extends AppCompatActivity {
+
 
     public void openActivityHomepage() {
         Intent intent = new Intent(this, Homepage.class);
         startActivity(intent);
-    }
-    public void openActivityNoten_Fach(){
-        Intent intent = new Intent(this, Grades_Fach.class);
-        startActivity(intent);}
+        }
+    public void openActivityNoten(){
+        Intent intent = new Intent(this, Grades.class);
+        startActivity(intent);
+        }
+    public void openActivityPlaner() {
+        Intent intent = new Intent(this, Exams.class);
+        startActivity(intent);
+        }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_grades_semester);
+        setContentView(R.layout.activity_task);
+
         WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
         getWindow().setFlags(
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
@@ -37,12 +47,16 @@ public class Grades_Semester extends AppCompatActivity {
         windowInsetsController.setAppearanceLightNavigationBars(true);
         windowInsetsController.setAppearanceLightStatusBars(true);
 
+        Button homeButtonTodo = findViewById(R.id.home_button_tasks);
+        homeButtonTodo.setOnClickListener(v ->openActivityHomepage());
 
+        Button planerButtonTodo = findViewById(R.id.exams_button_tasks);
+        planerButtonTodo.setOnClickListener(v -> openActivityPlaner());
 
-        Button homeButton = findViewById(R.id.home_button_grades_semster);
-        homeButton.setOnClickListener(v -> openActivityHomepage());
+        Button notenButtonTodo = findViewById(R.id.grades_button_tasks);
+        notenButtonTodo.setOnClickListener(v -> openActivityNoten());
 
-        Button test2Button = findViewById(R.id.test2);
-        test2Button.setOnClickListener(v -> openActivityNoten_Fach());
     }
 }
+
+

@@ -1,4 +1,4 @@
-package com.example.stuaid.activities;
+package com.example.stuaid;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowCompat;
 import androidx.core.view.WindowInsetsControllerCompat;
 
-import com.example.stuaid.R;
+import com.example.stuaid.activities.Homepage;
 
 public class Grades_Fach extends AppCompatActivity {
 
