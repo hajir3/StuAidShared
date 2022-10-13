@@ -13,7 +13,7 @@
         style="?android:attr/buttonBarButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="60dp"
         android:fontFamily="@font/megrim"
         android:text="StuAid"
         android:textAllCaps="false"
@@ -27,11 +27,12 @@
 
     <Button
         android:id="@+id/exams_button_exams"
+        android:clickable="false"
+        android:background="@drawable/gradient_background_buttons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginBottom="60dp"
-        android:background="@android:color/transparent"
         android:drawablePadding="-5sp"
         android:fontFamily="@font/suranna"
         android:text="@string/exams"
