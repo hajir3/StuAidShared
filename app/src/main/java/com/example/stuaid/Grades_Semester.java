@@ -10,10 +10,12 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowCompat;
 import androidx.core.view.WindowInsetsControllerCompat;
 
+import com.example.stuaid.activities.Homepage;
+
 public class Grades_Semester extends AppCompatActivity {
 
     public void openActivityHomepage() {
-        Intent intent = new Intent(this,Homepage.class);
+        Intent intent = new Intent(this, Homepage.class);
         startActivity(intent);
     }
     public void openActivityNoten_Fach(){

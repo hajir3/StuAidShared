@@ -24,12 +24,15 @@ import androidx.core.view.WindowCompat;
 import androidx.core.view.WindowInsetsControllerCompat;
 import androidx.loader.content.AsyncTaskLoader;
 
+import com.example.stuaid.activities.Exams;
+import com.example.stuaid.activities.Homepage;
+
 import java.security.AllPermission;
 
 public class Grades extends AppCompatActivity {
 
     public void openActivityHomepage() {
-        Intent intent = new Intent(this,Homepage.class);
+        Intent intent = new Intent(this, Homepage.class);
         startActivity(intent);
         }
     public void openActivityPlaner() {

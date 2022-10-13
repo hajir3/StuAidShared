@@ -37,7 +37,7 @@ public class Grades_Fach extends AppCompatActivity {
 
 
 
-        Button homeButton = findViewById(R.id.home_button);
+        Button homeButton = findViewById(R.id.home_button_grades_fach);
         homeButton.setOnClickListener(v -> openActivityHomepage());
 
 

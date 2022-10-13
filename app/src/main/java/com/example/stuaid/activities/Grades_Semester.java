@@ -39,7 +39,7 @@ public class Grades_Semester extends AppCompatActivity {
 
 
 
-        Button homeButton = findViewById(R.id.home_button);
+        Button homeButton = findViewById(R.id.home_button_grades_semster);
         homeButton.setOnClickListener(v -> openActivityHomepage());
 
         Button test2Button = findViewById(R.id.test2);
