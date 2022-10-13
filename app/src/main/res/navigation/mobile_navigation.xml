@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_exams">
+    app:startDestination="@+id/navigation_home">
 
     <fragment
         android:id="@+id/navigation_exams"
@@ -22,4 +22,7 @@
         android:name="com.example.stuaid.ui.tasks.TasksFragment"
         android:label="TASKS"
         tools:layout="@layout/fragment_tasks" />
+    <fragment
+        android:id="@+id/navigation_home"/>
+
 </navigation>

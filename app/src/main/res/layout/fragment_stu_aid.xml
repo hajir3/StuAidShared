@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StuAidFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/Logo_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:fontFamily="@font/megrim"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"
+        android:text="StuAid"
+        android:textAlignment="center"
+        android:textColor="#E6C38C"
+        android:textSize="80sp"
+        android:textStyle="bold" />
+
+</FrameLayout>
