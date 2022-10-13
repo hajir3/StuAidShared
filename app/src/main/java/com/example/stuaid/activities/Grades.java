@@ -49,13 +49,13 @@ public class Grades extends AppCompatActivity {
 
 
 
-        Button planerButtonNoten = findViewById(R.id.planer_button_noten);
+        Button planerButtonNoten = findViewById(R.id.exams_button_grades);
         planerButtonNoten.setOnClickListener(v -> openActivityPlaner());
 
-        Button todoButtonNoten = findViewById(R.id.todo_button_noten);
+        Button todoButtonNoten = findViewById(R.id.tasks_button_grades);
         todoButtonNoten.setOnClickListener(v -> openActivityToDo());
 
-        Button homeButtonNoten = findViewById(R.id.home_button_noten);
+        Button homeButtonNoten = findViewById(R.id.home_button_grades);
         homeButtonNoten.setOnClickListener(v -> openActivityHomepage());
 
 

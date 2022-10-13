@@ -9,14 +9,25 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowCompat;
 import androidx.core.view.WindowInsetsControllerCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.stuaid.Adapter.ToDoAdapter;
+import com.example.stuaid.Model.ToDoModel;
 import com.example.stuaid.R;
 import com.example.stuaid.activities.Exams;
 import com.example.stuaid.activities.Grades;
 import com.example.stuaid.activities.Homepage;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class Task extends AppCompatActivity {
+
+    private RecyclerView tasksRecyclerview;
+    private ToDoAdapter tasksAdapter;
+    private List<ToDoModel> taskList;
 
 
     public void openActivityHomepage() {
@@ -38,6 +49,31 @@ public class Task extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_task);
 
+        getSupportActionBar().hide();
+
+        taskList = new ArrayList<>();
+
+        tasksRecyclerview = findViewById(R.id.tasksRecyclerView);
+        tasksRecyclerview.setLayoutManager(new LinearLayoutManager(this));
+        tasksAdapter = new ToDoAdapter(this);
+        tasksRecyclerview.setAdapter(tasksAdapter);
+
+        ToDoModel task = new ToDoModel ();
+        task.setTask("this is a task");
+        task.setStatus(0);
+        task.setId(1);
+
+        taskList.add(task);
+        taskList.add(task);
+        taskList.add(task);
+        taskList.add(task);
+        taskList.add(task);
+
+        tasksAdapter.setTasks(taskList);
+
+
+
+
         WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
         getWindow().setFlags(
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
@@ -49,13 +85,13 @@ public class Task extends AppCompatActivity {
         windowInsetsController.setAppearanceLightNavigationBars(true);
         windowInsetsController.setAppearanceLightStatusBars(true);
 
-        Button homeButtonTodo = findViewById(R.id.home_button_todo);
+        Button homeButtonTodo = findViewById(R.id.home_button_tasks);
         homeButtonTodo.setOnClickListener(v ->openActivityHomepage());
 
-        Button planerButtonTodo = findViewById(R.id.planer_button_todo);
+        Button planerButtonTodo = findViewById(R.id.exams_button_tasks);
         planerButtonTodo.setOnClickListener(v -> openActivityPlaner());
 
-        Button notenButtonTodo = findViewById(R.id.noten_button_todo);
+        Button notenButtonTodo = findViewById(R.id.grades_button_tasks);
         notenButtonTodo.setOnClickListener(v -> openActivityNoten());
 
     }
