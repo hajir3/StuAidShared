@@ -9,7 +9,7 @@
     tools:context=".activities.Grades_Fach">
 
     <Button
-        android:id="@+id/home_button"
+        android:id="@+id/home_button_grades_fach"
         style="?android:attr/buttonBarButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -38,7 +38,9 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/noten"
+        android:id="@+id/grades_grades_fach"
+        android:drawableTop="@drawable/ic_grades"
+        android:drawablePadding="-5sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
@@ -63,7 +65,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <TextView
-        android:id="@+id/button_pruefung"
+        android:id="@+id/exams_button_grades_fach"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
