@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/backgroundmain4"
     android:orientation="vertical"
-    tools:context=".activities.Homepage">
+    tools:context=".Homepage">
 
     <TextView
         android:id="@+id/Logo"

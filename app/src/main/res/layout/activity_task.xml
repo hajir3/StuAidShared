@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/backgroundmain4"
     android:orientation="vertical"
-    tools:context=".activities.Task">
+    tools:context=".Task">
 
 
     <Button
@@ -36,7 +36,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/home_button_todo" />
+        app:layout_constraintTop_toBottomOf="@+id/home_button_tasks" />
 
 
     <androidx.recyclerview.widget.RecyclerView

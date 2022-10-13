@@ -1,4 +1,4 @@
-package com.example.stuaid.activities;
+package com.example.stuaid;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,32 +10,32 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowCompat;
 import androidx.core.view.WindowInsetsControllerCompat;
 
+import com.example.stuaid.Exams;
 import com.example.stuaid.R;
+import com.example.stuaid.Grades;
+import com.example.stuaid.Task;
 
-public class Grades extends AppCompatActivity {
 
-    public void openActivityHomepage() {
-        Intent intent = new Intent(this, Homepage.class);
-        startActivity(intent);
-        }
+public class Homepage extends AppCompatActivity {
+
+
     public void openActivityPlaner() {
         Intent intent = new Intent(this, Exams.class);
+        startActivity(intent);
+    }
+    public void openActivityNoten() {
+        Intent intent = new Intent(this, Grades.class);
         startActivity(intent);
     }
     public void openActivityToDo() {
         Intent intent = new Intent(this, Task.class);
         startActivity(intent);
     }
-
-    public void openActivityNoten_Semester(){
-        Intent intent = new Intent(this, Grades_Semester.class);
-        startActivity(intent);}
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_grades);
+
+        setContentView(R.layout.activity_homepage);
         WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
         getWindow().setFlags(
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
@@ -49,21 +49,14 @@ public class Grades extends AppCompatActivity {
 
 
 
-        Button planerButtonNoten = findViewById(R.id.exams_button_grades);
-        planerButtonNoten.setOnClickListener(v -> openActivityPlaner());
-
-        Button todoButtonNoten = findViewById(R.id.tasks_button_grades);
-        todoButtonNoten.setOnClickListener(v -> openActivityToDo());
-
-        Button homeButtonNoten = findViewById(R.id.home_button_grades);
-        homeButtonNoten.setOnClickListener(v -> openActivityHomepage());
 
 
 
-        Button testButton = findViewById(R.id.test);
-        testButton.setOnClickListener(v -> openActivityNoten_Semester());
+        Button planerButton = findViewById(R.id.exams_button_homepage);
+        planerButton.setOnClickListener(v -> openActivityPlaner());
+        Button notenButton = findViewById(R.id.grades_button_homepage);
+        notenButton.setOnClickListener(v -> openActivityNoten());
+        Button todoButton = findViewById(R.id.tasks_button_hompage);
+        todoButton.setOnClickListener(v -> openActivityToDo());
     }
-
-
 }
-

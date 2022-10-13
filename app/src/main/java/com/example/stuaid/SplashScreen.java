@@ -1,4 +1,4 @@
-package com.example.stuaid.activities;
+package com.example.stuaid;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,8 +10,6 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.WindowCompat;
-
-import com.example.stuaid.R;
 
 
 public class SplashScreen extends AppCompatActivity {
