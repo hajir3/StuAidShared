@@ -26,38 +26,38 @@
 
         <activity
 
-            android:name=".Grades_Fach"
+            android:name=".activities.Grades_Fach"
             android:screenOrientation="locked"
             android:exported="true"
             android:theme="@style/Theme.StuAid.Pages"/>
         <activity
-            android:name=".Grades_Semester"
+            android:name=".activities.Grades_Semester"
             android:screenOrientation="locked"
             android:exported="true"
             android:theme="@style/Theme.StuAid.Pages"/>
         <activity
 
-            android:name=".Task"
+            android:name=".activities.Task"
             android:screenOrientation="locked"
             android:exported="true"
             android:theme="@style/Theme.StuAid.Pages" />
         <activity
-            android:name=".Grades"
+            android:name=".activities.Grades"
             android:screenOrientation="locked"
             android:exported="true"
             android:theme="@style/Theme.StuAid.Pages" />
         <activity
-            android:name=".Exams"
+            android:name=".activities.Exams"
             android:screenOrientation="locked"
             android:exported="true"
             android:theme="@style/Theme.StuAid.Pages" />
         <activity
-            android:name=".Homepage"
+            android:name=".activities.Homepage"
             android:screenOrientation="locked"
             android:exported="true"
             android:theme="@style/Theme.StuAid.Pages" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".activities.SplashScreen"
             android:screenOrientation="locked"
             android:exported="true"
             android:theme="@style/Theme.StuAid.SplashScreen">
