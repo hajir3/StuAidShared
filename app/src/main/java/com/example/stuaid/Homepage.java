@@ -47,11 +47,11 @@ public class Homepage extends AppCompatActivity {
 
 
 
-        Button planerButton = findViewById(R.id.planer_button);
+        Button planerButton = findViewById(R.id.planer_button_homepage);
         planerButton.setOnClickListener(v -> openActivityPlaner());
-        Button notenButton = findViewById(R.id.noten_button);
+        Button notenButton = findViewById(R.id.noten_button_homepage);
         notenButton.setOnClickListener(v -> openActivityNoten());
-        Button todoButton = findViewById(R.id.todo_button);
+        Button todoButton = findViewById(R.id.todo_button_hompage);
         todoButton.setOnClickListener(v -> openActivityToDo());
     }
 }
