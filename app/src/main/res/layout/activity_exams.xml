@@ -27,7 +27,7 @@
 
     <TextView
         android:id="@+id/exams_button_exams"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginBottom="60dp"
@@ -37,6 +37,7 @@
         android:text="@string/exams"
         android:textColor="#514440"
         android:textSize="19sp"
+        android:gravity="center"
         app:drawableTopCompat="@drawable/ic_exams"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/grades_button_exams"
@@ -44,7 +45,7 @@
 
     <Button
         android:id="@+id/grades_button_exams"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
         android:background="@android:color/transparent"
@@ -54,13 +55,14 @@
         android:text="@string/grades"
         android:textColor="#514440"
         android:textSize="19sp"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/tasks_button_exams"
         app:layout_constraintStart_toEndOf="@+id/exams_button_exams" />
 
     <Button
         android:id="@+id/tasks_button_exams"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="60dp"
@@ -71,6 +73,7 @@
         android:text="@string/tasks"
         android:textColor="#514440"
         android:textSize="19sp"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/grades_button_exams" />
