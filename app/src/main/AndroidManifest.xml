@@ -11,7 +11,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/logo_black_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyApplication"
+        android:theme="@style/Theme.StuAid"
         tools:targetApi="31">
 
         <!-- Modifikation der activities.
@@ -19,19 +19,6 @@
          android:screenOrientation gibt Orientation des Bildschirms an.
          android:theme weist der activity ein bereits erstelltes Theme zu.
          android:exported gibt an, ob ein anderes Programm als android-studio die activity öffnen kann-->
-
-        <activity
-            android:name=".Test1"
-            android:exported="true"
-            android:label="@string/title_activity_test1">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
 
         <activity
 
