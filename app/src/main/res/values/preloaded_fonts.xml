@@ -2,8 +2,45 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/acme</item>
+        <item>@font/adamina</item>
+        <item>@font/alegreya_sc</item>
+        <item>@font/amatic_sc</item>
+        <item>@font/baloo</item>
+        <item>@font/bilbo</item>
+        <item>@font/calligraffitti</item>
+        <item>@font/cinzel</item>
+        <item>@font/cinzel_decorative</item>
+        <item>@font/cormorant_light</item>
+        <item>@font/dynalight</item>
+        <item>@font/eb_garamond</item>
+        <item>@font/farsan</item>
+        <item>@font/fira_sans_thin_italic</item>
+        <item>@font/great_vibes</item>
+        <item>@font/im_fell_double_pica_sc</item>
+        <item>@font/im_fell_dw_pica_sc</item>
+        <item>@font/im_fell_french_canon_sc</item>
+        <item>@font/italiana</item>
+        <item>@font/kameron</item>
+        <item>@font/katibeh</item>
+        <item>@font/la_belle_aurore</item>
+        <item>@font/marcellus</item>
+        <item>@font/marcellus_sc</item>
+        <item>@font/marvel</item>
+        <item>@font/mate_sc</item>
         <item>@font/megrim</item>
+        <item>@font/metamorphous</item>
+        <item>@font/oranienbaum</item>
+        <item>@font/overlock_sc</item>
+        <item>@font/playball</item>
+        <item>@font/playfair_display_sc</item>
+        <item>@font/pt_serif_caption_italic</item>
+        <item>@font/rozha_one</item>
         <item>@font/suranna</item>
-
+        <item>@font/tinos_italic</item>
+        <item>@font/unna</item>
+        <item>@font/vidaloka</item>
+        <item>@font/vollkorn_sc</item>
+        <item>@font/wire_one</item>
+        <item>@font/yeseva_one</item>
     </array>
 </resources>

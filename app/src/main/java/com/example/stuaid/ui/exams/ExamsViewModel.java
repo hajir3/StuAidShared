@@ -1,4 +1,4 @@
-package com.example.stuaid.ui.Exams;
+package com.example.stuaid.ui.exams;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

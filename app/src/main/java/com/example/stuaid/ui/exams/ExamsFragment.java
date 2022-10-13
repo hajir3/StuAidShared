@@ -1,4 +1,4 @@
-package com.example.stuaid.ui.Exams;
+package com.example.stuaid.ui.exams;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.stuaid.databinding.FragmentExamsBinding;
+import com.example.stuaid.databinding.FragmentExamsBinding;
 
 public class ExamsFragment extends Fragment {
 
@@ -18,14 +19,14 @@ public class ExamsFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        ExamsViewModel examsViewModel =
+        ExamsViewModel homeViewModel =
                 new ViewModelProvider(this).get(ExamsViewModel.class);
 
         binding = FragmentExamsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textExams;
-        examsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

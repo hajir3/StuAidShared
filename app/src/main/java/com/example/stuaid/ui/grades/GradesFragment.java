@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.stuaid.databinding.FragmentGradesBinding;
+import com.example.myapplication.databinding.FragmentGradesBinding;
 
 public class GradesFragment extends Fragment {
 
@@ -18,7 +18,7 @@ public class GradesFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        GradesViewModel gradesViewModel =
+        GradesViewModel dashboardViewModel =
                 new ViewModelProvider(this).get(GradesViewModel.class);
 
 
@@ -26,7 +26,7 @@ public class GradesFragment extends Fragment {
         View root = binding.getRoot();
 
         final TextView textView = binding.textGrades;
-        gradesViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        dashboardViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

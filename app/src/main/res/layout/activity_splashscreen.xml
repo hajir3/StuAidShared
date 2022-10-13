@@ -106,7 +106,7 @@
         android:id="@+id/Tag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/suranna"
+        android:fontFamily="@font/megrim"
         android:text="MADE BY M&amp;H"
         android:textColor="#E6C38C"
         android:textSize="20sp"

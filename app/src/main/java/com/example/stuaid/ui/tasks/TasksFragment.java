@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.stuaid.databinding.FragmentTasksBinding;
+import com.example.myapplication.databinding.FragmentTasksBinding;
 
 public class TasksFragment extends Fragment {
 
@@ -18,14 +18,14 @@ public class TasksFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        TasksViewModel tasksViewModel =
+        TasksViewModel notificationsViewModel =
                 new ViewModelProvider(this).get(TasksViewModel.class);
 
         binding = FragmentTasksBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textTasks;
-        tasksViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        notificationsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
