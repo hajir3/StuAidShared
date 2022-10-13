@@ -1,4 +1,4 @@
-package com.example.stuaid;
+package com.example.stuaid.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,12 +10,13 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowCompat;
 import androidx.core.view.WindowInsetsControllerCompat;
 
+import com.example.stuaid.R;
 
-public class Homepage extends AppCompatActivity {
+public class Exams extends AppCompatActivity {
 
 
-    public void openActivityPlaner() {
-        Intent intent = new Intent(this, Exams.class);
+    public void openActivityHomepage() {
+        Intent intent = new Intent(this, Homepage.class);
         startActivity(intent);
     }
     public void openActivityNoten() {
@@ -29,8 +30,8 @@ public class Homepage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_exams);
 
-        setContentView(R.layout.activity_homepage);
         WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
         getWindow().setFlags(
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
@@ -42,16 +43,13 @@ public class Homepage extends AppCompatActivity {
         windowInsetsController.setAppearanceLightNavigationBars(true);
         windowInsetsController.setAppearanceLightStatusBars(true);
 
-
-
-
-
-
-        Button planerButton = findViewById(R.id.exams_button_homepage);
-        planerButton.setOnClickListener(v -> openActivityPlaner());
-        Button notenButton = findViewById(R.id.grades_button_homepage);
+        Button homeButton3 = findViewById(R.id.home_button_exams);
+        homeButton3.setOnClickListener(v ->openActivityHomepage());
+        Button notenButton = findViewById(R.id.grades_button_exams);
         notenButton.setOnClickListener(v -> openActivityNoten());
-        Button todoButton = findViewById(R.id.tasks_button_hompage);
+        Button todoButton = findViewById(R.id.tasks_button_exams);
         todoButton.setOnClickListener(v -> openActivityToDo());
     }
 }
+
+

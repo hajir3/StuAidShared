@@ -1,4 +1,4 @@
-package com.example.stuaid;
+package com.example.stuaid.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.WindowCompat;
+
+import com.example.stuaid.R;
 
 
 public class SplashScreen extends AppCompatActivity {
@@ -74,7 +76,7 @@ public class SplashScreen extends AppCompatActivity {
         //Splash Screen
 
         new Handler().postDelayed(() -> {
-            Intent intent = new Intent (SplashScreen.this,Homepage.class);
+            Intent intent = new Intent (SplashScreen.this, Homepage.class);
             startActivity(intent);
             finish();
         },SPLASH_TIME_OUT);
