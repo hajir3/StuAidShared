@@ -46,7 +46,8 @@
         android:outlineSpotShadowColor="@android:color/transparent"
         android:src="@drawable/add_brown"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/todo" />
 
 
     <Button

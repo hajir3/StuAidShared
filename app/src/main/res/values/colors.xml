@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="appBackground">#C1D7E1</color>
     <color name="semitransparent">#0C3E3330</color>
+    <color name="darkersemitransparent">#4F3E3330</color>
     <color name="transparent">#00FFFFFF</color>
     <color name="brown">#3E3330</color>
     <color name="ne">#E4B775</color>

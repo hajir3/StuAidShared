@@ -6,20 +6,28 @@
     app:cardElevation="4dp"
     app:cardCornerRadius="8dp"
     android:layout_marginHorizontal="16dp"
-    android:layout_marginVertical="8dp">
+    android:layout_marginVertical="8dp"
+    android:outlineSpotShadowColor="@color/darkersemitransparent"
+    android:outlineAmbientShadowColor="@color/darkersemitransparent">
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="8dp">
+        android:padding="8dp"
+        android:background="@color/ne"
+       >
 
         <CheckBox
             android:id="@+id/todoCheckbox"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/transparent"
             android:buttonTint="#3E3330"
             android:paddingStart="8dp"
-            tool:text="This is an Sample task inside the application" />
+            android:textColor="@color/brown"
+            android:textSize="17sp"
+            tool:text="This is an Sample task inside the application"
+            tool:textColor="@color/brown" />
 
     </RelativeLayout>
 

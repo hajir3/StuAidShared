@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:background="@null"
         android:hint="New Task"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
 
     <Button
         android:id="@+id/newTaskButton"
@@ -20,7 +20,9 @@
         android:layout_alignParentEnd="true"
         android:background="@android:color/transparent"
         android:text="Save"
+        android:fontFamily="@font/megrim"
         android:textAllCaps="false"
+        android:textStyle="bold"
         android:textColor="#3E3330"
         android:textSize="16sp" />
 

@@ -20,4 +20,5 @@
     <string name="tasks">TASKS</string>
     <string name="grades">GRADES</string>
     <string name="exams">EXAMS</string>
+    <string name="todo">TODO</string>
 </resources>
