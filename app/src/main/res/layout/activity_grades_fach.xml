@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/backgroundmain4"
     android:orientation="vertical"
-    tools:context=".activities.Grades_Fach">
+    tools:context=".Grades_Fach">
 
     <Button
         android:id="@+id/home_button_grades_fach"
@@ -21,38 +21,37 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/add_item"
+    <Button
+        android:id="@+id/add_item_grades_fach"
         android:layout_width="40dp"
         android:layout_height="37dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginBottom="140dp"
         android:hapticFeedbackEnabled="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/plus_neu"
-        tools:ignore="MissingConstraints" />
+        android:background="@drawable/add_foreground"
+         />
 
-    <TextView
+    <Button
         android:id="@+id/grades_grades_fach"
-        android:drawableTop="@drawable/ic_grades"
-        android:drawablePadding="-5sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:clickable="false"
-        android:background="@drawable/gradient_background_buttons"
         android:layout_marginBottom="60dp"
+        android:background="@drawable/gradient_background_buttons"
+        android:clickable="false"
+        android:drawablePadding="-5sp"
         android:fontFamily="@font/suranna"
         android:text="@string/grades"
         android:textColor="#3E3330"
         android:textSize="19sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:drawableTopCompat="@drawable/ic_grades" />
 
     <TextView
         android:id="@+id/semester"

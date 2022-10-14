@@ -6,27 +6,23 @@
     android:layout_height="match_parent"
     android:background="@drawable/backgroundmain4"
     android:orientation="vertical"
-    tools:context=".activities.Grades">
+    tools:context=".Grades">
 
    <Button
        android:id="@+id/home_button_grades"
+       style="?android:attr/buttonBarButtonStyle"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:layout_marginTop="60dp"
-       android:background="@android:color/transparent"
        android:fontFamily="@font/megrim"
-       android:lineSpacingExtra="60sp"
-       android:rotationX="0"
-       android:text="@string/stuaid"
+       android:text="StuAid"
        android:textAllCaps="false"
-       android:textColor="#514440"
+       android:textColor="#3E3330"
        android:textSize="24sp"
        android:textStyle="bold"
-       android:typeface="normal"
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent"
-       tools:text="StuAid" />
+       app:layout_constraintTop_toTopOf="parent"  />
 
    <Button
        android:id="@+id/exams_button_grades"
@@ -78,6 +74,16 @@
        app:layout_constraintBottom_toBottomOf="parent"
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintStart_toEndOf="@+id/grades_button_grades" />
+
+   <Button
+       android:layout_width="40dp"
+       android:layout_height="37dp"
+       android:layout_marginStart="65dp"
+       android:layout_marginBottom="140dp"
+       android:hapticFeedbackEnabled="false"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       android:background="@drawable/add_foreground" />
 
 
 
