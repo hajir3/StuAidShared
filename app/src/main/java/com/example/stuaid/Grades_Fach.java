@@ -17,6 +17,10 @@ public class Grades_Fach extends AppCompatActivity {
         Intent intent = new Intent(this, Homepage.class);
         startActivity(intent);
     }
+    public void openActivityGrades_Semester(){
+        Intent intent = new Intent(this, Grades_Semester.class);
+        startActivity(intent);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +37,8 @@ public class Grades_Fach extends AppCompatActivity {
         windowInsetsController.setAppearanceLightNavigationBars(true);
         windowInsetsController.setAppearanceLightStatusBars(true);
 
+        Button backButton = findViewById(R.id.back_button_grades_fach);
+        backButton.setOnClickListener(v -> openActivityGrades_Semester());
 
 
         Button homeButton = findViewById(R.id.home_button_grades_fach);

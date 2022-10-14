@@ -76,14 +76,16 @@
        app:layout_constraintStart_toEndOf="@+id/grades_button_grades" />
 
    <Button
+       android:id="@+id/add_item_grades"
        android:layout_width="40dp"
        android:layout_height="37dp"
-       android:layout_marginStart="65dp"
+       android:layout_marginEnd="20dp"
        android:layout_marginBottom="140dp"
+       app:fabCustomSize="35dp"
+       android:background="@drawable/add_brown"
        android:hapticFeedbackEnabled="false"
        app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintStart_toStartOf="parent"
-       android:background="@drawable/add_brown" />
+       app:layout_constraintEnd_toEndOf="parent" />
 
 
 

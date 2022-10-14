@@ -39,13 +39,15 @@
         android:id="@+id/fabtasks"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="130dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="140dp"
         android:backgroundTint="@android:color/transparent"
-
         android:contentDescription="@string/todo"
+        android:foreground="@drawable/add_brown"
+        android:outlineAmbientShadowColor="@color/transparent"
         android:outlineSpotShadowColor="@android:color/transparent"
-        android:src="@drawable/add_brown"
+        app:backgroundTint="@color/transparent"
+        app:fabCustomSize="35dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

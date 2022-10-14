@@ -19,6 +19,9 @@ public class Grades_Semester extends AppCompatActivity {
     public void openActivityNoten_Fach(){
         Intent intent = new Intent(this, Grades_Fach.class);
         startActivity(intent);}
+    public void openActivityGrades(){
+        Intent intent = new Intent(this, Grades.class);
+        startActivity(intent);}
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,5 +45,8 @@ public class Grades_Semester extends AppCompatActivity {
 
         Button test2Button = findViewById(R.id.test2);
         test2Button.setOnClickListener(v -> openActivityNoten_Fach());
+
+        Button backButton = findViewById(R.id.back_button_grades_semester);
+        backButton.setOnClickListener(v -> openActivityGrades());
     }
 }

@@ -9,6 +9,23 @@
     tools:context=".Grades_Semester">
 
     <Button
+        android:id="@+id/back_button_grades_semester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="60dp"
+        android:drawablePadding="-5sp"
+        android:fontFamily="@font/suranna"
+        android:text="back"
+        android:textColor="#3E3330"
+        android:background="@color/transparent"
+        android:textSize="19sp"
+        app:drawableTopCompat="@drawable/back"
+        app:fabCustomSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
         android:id="@+id/home_button_grades_semster"
         style="?android:attr/buttonBarButtonStyle"
         android:layout_width="wrap_content"
@@ -28,32 +45,31 @@
         android:id="@+id/add_item_grades_semester"
         android:layout_width="40dp"
         android:layout_height="37dp"
-        android:layout_marginStart="65dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginBottom="140dp"
-        android:hapticFeedbackEnabled="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         android:background="@drawable/add_brown"
-        />
+        android:hapticFeedbackEnabled="false"
+        app:fabCustomSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <TextView
+    <Button
         android:id="@+id/grades_grades_semster"
-        android:drawablePadding="-5sp"
-        android:clickable="false"
-        android:background="@drawable/gradient_background_buttons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
+        android:background="@drawable/gradient_background_buttons"
+        android:clickable="false"
+        android:drawablePadding="-5sp"
         android:fontFamily="@font/suranna"
         android:text="@string/grades"
         android:textColor="#3E3330"
         android:textSize="19sp"
+        app:drawableTopCompat="@drawable/ic_grades"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="HardcodedText"
-        app:drawableTopCompat="@drawable/ic_grades" />
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/semester"
@@ -75,9 +91,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="120dp"
+        android:fontFamily="@font/suranna"
         android:text="FACH"
         android:textColor="#3E3330"
-        android:fontFamily="@font/suranna"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText" />
@@ -87,12 +103,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/suranna"
         android:text="\u00D8"
         android:textColor="#3E3330"
-        android:fontFamily="@font/suranna"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toStartOf="@id/kompensationspunkte"
-        android:layout_marginEnd="40dp"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText"
         tools:layout_editor_absoluteX="169dp" />
 
@@ -102,11 +118,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
         android:layout_marginEnd="40dp"
+        android:fontFamily="@font/suranna"
         android:text="+/-"
         android:textColor="#3E3330"
-        android:fontFamily="@font/suranna"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText"
         tools:layout_editor_absoluteX="169dp" />
 
