@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/backgroundmain4"
     android:orientation="vertical"
-    tools:context=".activities.Grades_Semester">
+    tools:context=".Grades_Semester">
 
     <Button
         android:id="@+id/home_button_grades_semster"
@@ -21,25 +21,23 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/add_item"
+    <Button
+        android:id="@+id/add_item_grades_semester"
         android:layout_width="40dp"
         android:layout_height="37dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginBottom="140dp"
         android:hapticFeedbackEnabled="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/plus_neu"
-         />
+        android:background="@drawable/add_foreground"
+        />
 
     <TextView
         android:id="@+id/grades_grades_semster"
-        android:drawableTop="@drawable/ic_grades"
         android:drawablePadding="-5sp"
         android:clickable="false"
         android:background="@drawable/gradient_background_buttons"
@@ -54,7 +52,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        app:drawableTopCompat="@drawable/ic_grades" />
 
     <TextView
         android:id="@+id/semester"
