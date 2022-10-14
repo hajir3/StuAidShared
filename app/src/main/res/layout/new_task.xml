@@ -10,6 +10,8 @@
         android:layout_height="wrap_content"
         android:background="@null"
         android:hint="New Task"
+        android:fontFamily="@font/suranna"
+        android:textStyle="bold"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
 
     <Button
@@ -20,11 +22,11 @@
         android:layout_alignParentEnd="true"
         android:background="@android:color/transparent"
         android:text="Save"
-        android:fontFamily="@font/megrim"
+        android:fontFamily="@font/suranna"
         android:textAllCaps="false"
         android:textStyle="bold"
         android:textColor="#3E3330"
-        android:textSize="16sp" />
+        android:textSize="18sp" />
 
 
 
