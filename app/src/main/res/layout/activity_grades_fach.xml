@@ -33,7 +33,7 @@
         android:hapticFeedbackEnabled="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:background="@drawable/add_foreground"
+        android:background="@drawable/add_brown"
          />
 
     <Button

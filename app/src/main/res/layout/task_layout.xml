@@ -14,12 +14,12 @@
         android:padding="8dp">
 
         <CheckBox
+            android:id="@+id/todoCheckbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/todoCheckbox"
-            tool:text="This is an Sample task inside the application"
+            android:buttonTint="#3E3330"
             android:paddingStart="8dp"
-            android:buttonTint="@color/black"/>
+            tool:text="This is an Sample task inside the application" />
 
     </RelativeLayout>
 
