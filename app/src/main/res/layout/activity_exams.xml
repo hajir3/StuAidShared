@@ -24,21 +24,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <Button
         android:id="@+id/exams_button_exams"
-        android:clickable="false"
-        android:background="@drawable/gradient_background_buttons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginBottom="60dp"
+        android:background="@drawable/gradient_background_buttons"
+        android:drawableTop="@drawable/ic_exams"
+        android:clickable="false"
         android:drawablePadding="-5sp"
         android:fontFamily="@font/suranna"
         android:text="@string/exams"
-        android:textColor="#514440"
+        android:textColor="#3E3330"
         android:textSize="19sp"
-        app:drawableTopCompat="@drawable/ic_exams"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/grades_button_exams"
         app:layout_constraintStart_toStartOf="parent" />
@@ -53,7 +52,7 @@
         android:drawablePadding="-5sp"
         android:fontFamily="@font/suranna"
         android:text="@string/grades"
-        android:textColor="#514440"
+        android:textColor="#3E3330"
         android:textSize="19sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/tasks_button_exams"
@@ -70,12 +69,11 @@
         android:drawablePadding="-5sp"
         android:fontFamily="@font/suranna"
         android:text="@string/tasks"
-        android:textColor="#514440"
+        android:textColor="#3E3330"
         android:textSize="19sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/grades_button_exams" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
