@@ -8,140 +8,532 @@
     android:orientation="vertical"
     tools:context=".Grades">
 
-   <Button
-       android:id="@+id/home_button_grades"
-       style="?android:attr/buttonBarButtonStyle"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_marginTop="60dp"
-       android:fontFamily="@font/megrim"
-       android:text="StuAid"
-       android:textAllCaps="false"
-       android:textColor="#3E3330"
-       android:textSize="24sp"
-       android:textStyle="bold"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent"  />
+    <Button
+        android:id="@+id/home_button_grades"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/megrim"
+        android:text="StuAid"
+        android:textAllCaps="false"
+        android:textColor="#3E3330"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
 
-   <Button
-       android:id="@+id/exams_button_grades"
-       android:drawableTop="@drawable/ic_exams"
-       android:drawablePadding="-5sp"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_marginStart="20dp"
-       android:layout_marginBottom="60dp"
-       android:fontFamily="@font/suranna"
-       android:text="@string/exams"
-       android:textColor="#3E3330"
-       android:textSize="19sp"
-       android:background="@android:color/transparent"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toStartOf="@+id/grades_button_grades"
-       app:layout_constraintStart_toStartOf="parent"/>
+    <Button
+        android:id="@+id/exams_button_grades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="60dp"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/ic_exams"
+        android:drawablePadding="-5sp"
+        android:fontFamily="@font/suranna"
+        android:text="@string/exams"
+        android:textColor="#3E3330"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/grades_button_grades"
+        app:layout_constraintStart_toStartOf="parent" />
 
-   <Button
-       android:id="@+id/grades_button_grades"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_marginBottom="60dp"
-       android:background="@drawable/gradient_background_buttons"
-       android:clickable="false"
-       android:drawableTop="@drawable/ic_grades"
-       android:drawablePadding="-5sp"
-       android:fontFamily="@font/suranna"
-       android:text="@string/grades"
-       android:textColor="#3E3330"
-       android:textSize="19sp"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/grades_button_grades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/gradient_background_buttons"
+        android:clickable="false"
+        android:drawableTop="@drawable/ic_grades"
+        android:drawablePadding="-5sp"
+        android:fontFamily="@font/suranna"
+        android:text="@string/grades"
+        android:textColor="#3E3330"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-   <Button
-       android:id="@+id/tasks_button_grades"
-       android:drawableTop="@drawable/ic_tasks"
-       android:drawablePadding="-5sp"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_marginBottom="60dp"
-       android:layout_marginEnd="20dp"
-       android:fontFamily="@font/suranna"
-       android:text="@string/tasks"
-       android:textColor="#3E3330"
-       android:textSize="19sp"
-       android:background="@android:color/transparent"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintStart_toEndOf="@+id/grades_button_grades" />
+    <Button
+        android:id="@+id/tasks_button_grades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="60dp"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/ic_tasks"
+        android:drawablePadding="-5sp"
+        android:fontFamily="@font/suranna"
+        android:text="@string/tasks"
+        android:textColor="#3E3330"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/grades_button_grades" />
 
-   <Button
-       android:id="@+id/add_item_grades"
-       android:layout_width="40dp"
-       android:layout_height="37dp"
-       android:layout_marginEnd="20dp"
-       android:layout_marginBottom="140dp"
-       app:fabCustomSize="35dp"
-       android:background="@drawable/add_brown"
-       android:hapticFeedbackEnabled="false"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent" />
-
-
-
-
-   <Button
-       android:id="@+id/test"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="@string/next"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabgrades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="140dp"
+        android:backgroundTint="@android:color/transparent"
+        android:contentDescription="@string/todo"
+        android:foreground="@drawable/add_brown"
+        android:outlineAmbientShadowColor="@color/transparent"
+        android:outlineSpotShadowColor="@android:color/transparent"
+        app:backgroundTint="@color/transparent"
+        app:fabCustomSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
-   <TextView
-       android:id="@+id/button_semester"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_marginStart="40dp"
-       android:layout_marginTop="120dp"
-       android:text="SEMESTER"
-       android:textColor="#3E3330"
-       android:fontFamily="@font/suranna"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent"
-       tools:ignore="HardcodedText" />
+    <TextView
+        android:id="@+id/button_semester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/suranna"
+        android:text="SEMESTER"
+        android:textColor="#3E3330"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
 
-   <TextView
-       android:id="@+id/durchschnitt_1"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_marginTop="120dp"
-       android:text="\u00D8"
-       android:textColor="#3E3330"
-       android:fontFamily="@font/suranna"
-       app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintEnd_toStartOf="@id/kompensationspunkte"
-       android:layout_marginEnd="40dp"
-       tools:ignore="HardcodedText"
-       tools:layout_editor_absoluteX="169dp" />
+    <TextView
+        android:id="@+id/durchschnitt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="140dp"
+        android:fontFamily="@font/suranna"
+        android:gravity="end"
+        android:text="\u00D8"
+        android:textColor="#3E3330"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
 
-   <TextView
-       android:id="@+id/kompensationspunkte"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_marginTop="120dp"
-       android:layout_marginEnd="40dp"
-       android:fontFamily="@font/suranna"
-       android:text="+/-"
-       android:textColor="#3E3330"
-       android:textStyle="bold"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintTop_toTopOf="parent"
-       tools:ignore="HardcodedText" />
+    <TextView
+        android:id="@+id/kompensationspunkte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/suranna"
+        android:text="+/-"
+        android:textColor="#3E3330"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
 
+    <TextView
+        android:id="@+id/Matur_Semester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/suranna"
+        android:text="MATUR SEMESTER"
+        android:textColor="#3E3330"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_semester"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/durchschnitt_Matur_Semester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="140dp"
+        android:fontFamily="@font/suranna"
+        android:gravity="end"
+        android:text="4.75"
+        android:textColor="#3E3330"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durchschnitt"
+        tools:ignore="HardcodedText"/>
+
+
+    <TextView
+        android:id="@+id/kompensationspunkte_Matur_Semester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/suranna"
+        android:text="+2.0"
+        android:textColor="#3E3330"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/kompensationspunkte"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/Alle_Semester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/suranna"
+        android:text="ALLE SEMESTER"
+        android:textColor="#3E3330"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Matur_Semester"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/durchschnitt_Alle_Semester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="140dp"
+        android:fontFamily="@font/suranna"
+        android:gravity="end"
+        android:text="5"
+        android:textColor="#3E3330"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durchschnitt_Matur_Semester"
+        tools:ignore="HardcodedText"/>
+
+
+    <TextView
+        android:id="@+id/kompensationspunkte_Alle_Semester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/suranna"
+        android:text="+8.5"
+        android:textColor="#3E3330"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/kompensationspunkte_Matur_Semester"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/Semester_7"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/suranna"
+        android:text="SEMESTER 7"
+        android:textColor="#3E3330"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Alle_Semester"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/durchschnitt_Semester_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="140dp"
+        android:fontFamily="@font/suranna"
+        android:gravity="end"
+        android:text="5.25"
+        android:textColor="#3E3330"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durchschnitt_Alle_Semester"
+        tools:ignore="HardcodedText"
+        tools:layout_editor_absoluteX="260dp" />
+
+
+    <TextView
+        android:id="@+id/kompensationspunkte_Semester_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/suranna"
+        android:text="+3.0"
+        android:textColor="#3E3330"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/kompensationspunkte_Alle_Semester"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/Semester_6"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/suranna"
+        android:text="SEMESTER 6"
+        android:textColor="#3E3330"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Semester_7"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/durchschnitt_Semester_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="140dp"
+        android:fontFamily="@font/suranna"
+        android:gravity="end"
+        android:text="4.25"
+        android:textColor="#3E3330"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durchschnitt_Semester_7"
+        tools:ignore="HardcodedText"
+        tools:layout_editor_absoluteX="260dp" />
+
+
+    <TextView
+        android:id="@+id/kompensationspunkte_Semester_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/suranna"
+        android:text="-1.0"
+        android:textColor="#3E3330"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/kompensationspunkte_Semester_7"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/Semester_5"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/suranna"
+        android:text="SEMESTER 5"
+        android:textColor="#3E3330"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Semester_6"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/durchschnitt_Semester_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="140dp"
+        android:fontFamily="@font/suranna"
+        android:gravity="end"
+        android:text="4.75"
+        android:textColor="#3E3330"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durchschnitt_Semester_6"
+        tools:ignore="HardcodedText"
+        tools:layout_editor_absoluteX="260dp" />
+
+
+    <TextView
+        android:id="@+id/kompensationspunkte_Semester_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/suranna"
+        android:gravity="end"
+        android:text="+1.0"
+        android:textColor="#3E3330"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/kompensationspunkte_Semester_6"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/Semester_4"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/suranna"
+        android:text="SEMESTER 4"
+        android:textColor="#3E3330"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Semester_5"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/durchschnitt_Semester_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="140dp"
+        android:fontFamily="@font/suranna"
+        android:gravity="end"
+        android:text="5"
+        android:textColor="#3E3330"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durchschnitt_Semester_5"
+        tools:ignore="HardcodedText"
+        tools:layout_editor_absoluteX="260dp" />
+
+
+    <TextView
+        android:id="@+id/kompensationspunkte_Semester_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/suranna"
+        android:gravity="end"
+        android:text="+0.5"
+        android:textColor="#3E3330"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/kompensationspunkte_Semester_5"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/Semester_3"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/suranna"
+        android:text="SEMESTER 3"
+        android:textColor="#3E3330"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Semester_4"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/durchschnitt_Semester_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="140dp"
+        android:fontFamily="@font/suranna"
+        android:gravity="end"
+        android:text="4.25"
+        android:textColor="#3E3330"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durchschnitt_Semester_4"
+        tools:ignore="HardcodedText"
+        tools:layout_editor_absoluteX="260dp" />
+
+
+    <TextView
+        android:id="@+id/kompensationspunkte_Semester_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/suranna"
+        android:gravity="end"
+        android:text="-1.5"
+        android:textColor="#3E3330"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/kompensationspunkte_Semester_4"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/Semester_2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/suranna"
+        android:text="SEMESTER 2"
+        android:textColor="#3E3330"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Semester_3"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/durchschnitt_Semester_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="140dp"
+        android:fontFamily="@font/suranna"
+        android:gravity="end"
+        android:text="5.25"
+        android:textColor="#3E3330"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durchschnitt_Semester_3"
+        tools:ignore="HardcodedText"
+        tools:layout_editor_absoluteX="260dp" />
+
+
+    <TextView
+        android:id="@+id/kompensationspunkte_Semester_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/suranna"
+        android:gravity="end"
+        android:text="+3.0"
+        android:textColor="#3E3330"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/kompensationspunkte_Semester_3"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/Semester_1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/suranna"
+        android:text="SEMESTER 1"
+        android:textColor="#3E3330"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Semester_2"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/durchschnitt_Semester_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="140dp"
+        android:fontFamily="@font/suranna"
+        android:gravity="end"
+        android:text="5.5"
+        android:textColor="#3E3330"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durchschnitt_Semester_2"
+        tools:ignore="HardcodedText"
+        tools:layout_editor_absoluteX="260dp" />
+
+
+    <TextView
+        android:id="@+id/kompensationspunkte_Semester_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/suranna"
+        android:gravity="end"
+        android:text="+3.5"
+        android:textColor="#3E3330"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/kompensationspunkte_Semester_2"
+        tools:ignore="HardcodedText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

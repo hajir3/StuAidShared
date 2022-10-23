@@ -55,13 +55,6 @@ public class Grades extends AppCompatActivity {
         Button homeButtonNoten = findViewById(R.id.home_button_grades);
         homeButtonNoten.setOnClickListener(v -> openActivityHomepage());
 
-        Button testButton = findViewById(R.id.test);
-        testButton.setOnClickListener(v -> openActivityNoten_Semester());
-
-
-
     }
-
-
 }
 

@@ -24,6 +24,239 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/Prüfung_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="160dp"
+        android:fontFamily="@font/suranna"
+        android:text="1. Mathe Test"
+        android:textColor="#3E3330"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/Prüfung_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/suranna"
+        android:text="1. Franz Test"
+        android:textColor="#3E3330"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Prüfung_1"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/Prüfung_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/suranna"
+        android:text="1. Geo Test"
+        android:textColor="#3E3330"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Prüfung_2"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/Prüfung_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/suranna"
+        android:text="2. Mathe Test"
+        android:textColor="#3E3330"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Prüfung_3"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/Prüfung_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/suranna"
+        android:text=" Deutsch Literatur Test"
+        android:textColor="#3E3330"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Prüfung_4"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/Prüfung_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/suranna"
+        android:text=" Franz Oral Test"
+        android:textColor="#3E3330"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Prüfung_5"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/Prüfung_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/suranna"
+        android:text="2. Bio Test"
+        android:textColor="#3E3330"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Prüfung_6"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/Prüfung_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/suranna"
+        android:text="Mathe Matur Test"
+        android:textColor="#3E3330"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Prüfung_7"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/datum_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="140dp"
+        android:fontFamily="@font/suranna"
+        android:gravity="end"
+        android:text="13.02.22"
+        android:textColor="#3E3330"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/datum_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="140dp"
+        android:fontFamily="@font/suranna"
+        android:gravity="end"
+        android:text="15.02.22"
+        android:textColor="#3E3330"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/datum_1"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/datum_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="140dp"
+        android:fontFamily="@font/suranna"
+        android:gravity="end"
+        android:text="22.02.22"
+        android:textColor="#3E3330"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/datum_2"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/datum_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="140dp"
+        android:fontFamily="@font/suranna"
+        android:gravity="end"
+        android:text="27.02.22"
+        android:textColor="#3E3330"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/datum_3"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/datum_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="140dp"
+        android:fontFamily="@font/suranna"
+        android:gravity="end"
+        android:text="13.03.22"
+        android:textColor="#3E3330"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/datum_4"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/datum_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="140dp"
+        android:fontFamily="@font/suranna"
+        android:gravity="end"
+        android:text="14.03.22"
+        android:textColor="#3E3330"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/datum_5"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/datum_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="140dp"
+        android:fontFamily="@font/suranna"
+        android:gravity="end"
+        android:text="07.04.22"
+        android:textColor="#3E3330"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/datum_6"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/datum_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="140dp"
+        android:fontFamily="@font/suranna"
+        android:gravity="end"
+        android:text="20.06.22"
+        android:textColor="#3E3330"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/datum_7"
+        tools:ignore="HardcodedText" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabexams"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="140dp"
+        android:backgroundTint="@android:color/transparent"
+        android:contentDescription="@string/todo"
+        android:foreground="@drawable/add_brown"
+        android:outlineAmbientShadowColor="@color/transparent"
+        android:outlineSpotShadowColor="@android:color/transparent"
+        app:backgroundTint="@color/transparent"
+        app:fabCustomSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
     <Button
         android:id="@+id/exams_button_exams"
         android:layout_width="wrap_content"
@@ -31,8 +264,8 @@
         android:layout_marginStart="20dp"
         android:layout_marginBottom="60dp"
         android:background="@drawable/gradient_background_buttons"
-        android:drawableTop="@drawable/ic_exams"
         android:clickable="false"
+        android:drawableTop="@drawable/ic_exams"
         android:drawablePadding="-5sp"
         android:fontFamily="@font/suranna"
         android:text="@string/exams"
@@ -74,6 +307,116 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/grades_button_exams" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkBox1" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkBox2" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkBox3"/>
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkBox4"/>
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkBox5"/>
+
+    <CheckBox
+        android:id="@+id/checkBox7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkBox6"/>
+
+    <CheckBox
+        android:id="@+id/checkBox8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkBox7"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:drawableStart="@drawable/search"
+        android:layout_marginTop="110dp"
+        android:layout_marginStart="50dp"
+        android:text="    Search..."
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/darker_gray"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"/>
+
+    <Button
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:drawableTop="@drawable/filter"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="110dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"/>
+
+    <Button
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:drawableTop="@drawable/menu"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="50dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"/>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
