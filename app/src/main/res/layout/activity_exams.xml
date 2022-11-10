@@ -314,6 +314,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="160dp"
         android:layout_marginEnd="40dp"
+        android:buttonTint="#3E3330"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -323,6 +324,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="40dp"
+        android:buttonTint="#3E3330"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/checkBox1" />
 
@@ -332,6 +334,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="40dp"
+        android:buttonTint="#3E3330"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/checkBox2" />
 
@@ -341,8 +344,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="40dp"
+        android:buttonTint="#3E3330"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/checkBox3"/>
+        app:layout_constraintTop_toBottomOf="@id/checkBox3" />
 
     <CheckBox
         android:id="@+id/checkBox5"
@@ -350,8 +354,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="40dp"
+        android:buttonTint="#3E3330"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/checkBox4"/>
+        app:layout_constraintTop_toBottomOf="@id/checkBox4" />
 
     <CheckBox
         android:id="@+id/checkBox6"
@@ -359,8 +364,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="40dp"
+        android:buttonTint="#3E3330"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/checkBox5"/>
+        app:layout_constraintTop_toBottomOf="@id/checkBox5" />
 
     <CheckBox
         android:id="@+id/checkBox7"
@@ -368,8 +374,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="40dp"
+        android:buttonTint="#3E3330"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/checkBox6"/>
+        app:layout_constraintTop_toBottomOf="@id/checkBox6" />
 
     <CheckBox
         android:id="@+id/checkBox8"
@@ -377,46 +384,46 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="40dp"
+        android:buttonTint="#3E3330"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/checkBox7"/>
+        app:layout_constraintTop_toBottomOf="@id/checkBox7" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="25dp"
-        android:drawableStart="@drawable/search"
-        android:layout_marginTop="110dp"
         android:layout_marginStart="50dp"
-        android:text="    Search..."
-        android:textSize="20sp"
+        android:layout_marginTop="110dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/search"
+        android:gravity="center"
+        android:text="     Search..."
         android:textAllCaps="false"
         android:textColor="@android:color/darker_gray"
-        android:background="@android:color/transparent"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:gravity="center"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:layout_width="25dp"
         android:layout_height="25dp"
-        android:drawableTop="@drawable/filter"
         android:layout_marginTop="110dp"
         android:layout_marginEnd="110dp"
         android:background="@android:color/transparent"
+        android:drawableTop="@drawable/filter"
+        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:gravity="center"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:layout_width="25dp"
         android:layout_height="25dp"
-        android:drawableTop="@drawable/menu"
         android:layout_marginTop="110dp"
         android:layout_marginEnd="50dp"
         android:background="@android:color/transparent"
+        android:drawableTop="@drawable/menu"
+        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:gravity="center"/>
-
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

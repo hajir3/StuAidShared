@@ -15,7 +15,7 @@ import androidx.core.view.WindowCompat;
 public class SplashScreen extends AppCompatActivity {
 
 
-    private static final int SPLASH_TIME_OUT = 1000;
+    private static final int SPLASH_TIME_OUT = 5000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
